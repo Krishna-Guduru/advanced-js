@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+const swift={
+    comapny:"maruthi-suziki",
+    wheles:4,
+    valve:"piston-valve",
+    doors:4,
+    seating:5
+};
+const nexa=Object.create(swift);
+ console.log("nexa:",nexa);
+
+function car(v,d,s,w){
+    this.company="Maruthi-suzuki",
+    this.valve="v",
+    this.doors="d",
+    this.seating="s",
+    this.wheles="w"
+}
+// car.prototype.nexa=function(){
+// }
+let baleno = new car("valve",4,5,4)
+console.log("baleno:",baleno)
+</script>

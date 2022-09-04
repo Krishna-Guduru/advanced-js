@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city" placeholder=" city Name "><br>
+
+    <button id="btn" onclick="getData()">Get Weather</button>
+    <div id="container"></div>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://123movies-to.org"></a><br>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
+            <a href="https://www.embedgooglemap.net">interactive google maps for website</a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+
+
+    // https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4c720ebec900cabef71eb3e672d8d8f0&units=metric
+
+    async function getData(){
+        try {
+            let city = document.getElementById("city").value;
+            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4c720ebec900cabef71eb3e672d8d8f0&units=metric`)
+            let data = await res.json();
+          appendData(data)
+          container.innerHTML = null;
+            console.log( data);
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    function appendData(data){
+        let box=document.createElement("div")
+        let box1=document.createElement("div")
+            let city=document.createElement("p")
+            city.innerText=data.name
+            let temp_min = document.createElement("p")
+            temp_min.innerHTML = data.main.temp_min
+            let temp_max = document.createElement("p")
+            temp_max.innerHTML =data.main.temp_max 
+            let clouds = document.createElement("p");
+            clouds.innerHTML = data.clouds.all
+            let current = document.createElement("p");
+            current.innerText = data.main.temp
+            let iframe = document.createElement("iframe")
+            iframe.style = "  width: 400px;  height: 400px;"
+
+            iframe.src = `https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+            box1.append(iframe)
+    box.append(city,temp_max,temp_min,clouds,current)
+    document.getElementById("container").append(box,box1)
+    }
+</script>

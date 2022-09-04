@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #hline {
+            width: 200px;
+            height: 50x;
+            margin-bottom: 20px;
+        }
+        #city {
+            width: 300px;
+            height: 30px;
+           
+
+        }
+        #hline {
+            width: 200px;
+            height: 50x;
+            margin-bottom: 20px;
+        }
+        #city {
+            width: 100px;
+            height: 30px;
+            display: block;
+           
+        }
+        #showData{
+            display:grid;
+            grid-template-columns: repeat(7, 200px);
+            grid-template-rows:1,400px ;
+            gap:20px;
+        }
+        #showData>div{
+            padding: 20px;
+        
+        }
+    </style>
+</head>
+
+<body>
+        <input type="text" id="city" placeholder=" city Name "><br>
+
+        <button id="btn" onclick="getData()">Get Weather</button>
+    <div id="container">
+    </div>
+      
+    <div id="showData">
+    </div>
+</body>
+
+</html>
+<script>
+     function  getData()
+  {
+    document.getElementById("showData").innerHTML = null;
+    Weather()
+    Weather2()
+  }
+       let  city = document.getElementById("city").value;
+    var container = document.getElementById("container");
+    async function Weather(){
+        try {
+            let city = document.getElementById("city").value;
+            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4c720ebec900cabef71eb3e672d8d8f0&units=metric`)
+            let data = await res.json();
+            container.innerHTML = null;
+            console.log( data);
+            appendData(data)
+        } catch (err) {
+            console.log(err)
+        }
+        function appendData(data) {
+
+            var krishna = document.createElement("div");
+            var krishna2 = document.createElement("div")
+            var name = document.createElement("p");
+            name.innerText = `City: ${data.name}`;
+            var sunrise = document.createElement("p");
+            const unixTime = data.sys.sunrise;
+            let date = new Date(unixTime * 1000);
+            var hours = date.getHours();
+            var minutes = "0" + date.getMinutes();
+            var seconds = "0" + date.getSeconds();
+            var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+            sunrise.innerText = `Sunrise Date with Time:${date.toLocaleDateString("en-US")}Time : ${formattedTime}`;
+            var sunset = document.createElement("p");
+            const unixTime1 = data.sys.sunset;
+            const date1 = new Date(unixTime1 * 1000);
+
+            var hours = date1.getHours();
+
+            var minutes = "0" + date1.getMinutes();
+
+            var seconds = "0" + date1.getSeconds();
+
+            var formattedTime1 = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+            sunset.innerText = `Sunset Date with Time:${date1.toLocaleDateString("en-US")}Time : ${formattedTime1}`;
+
+            let city = document.createElement("p");
+              city.innerText = `City: ${data.name}`;
+            let temp_min = document.createElement("p")
+            temp_min.innerHTML = `Min temp: ${data.main.temp_min}`
+            let temp_max = document.createElement("p")
+            temp_max.innerHTML = `Max temp: ${data.main.temp_max} °C `
+            
+            let clouds = document.createElement("p");
+            clouds.innerHTML = `Clouds : ${data.clouds.all}`;
+            let current = document.createElement("p");
+            current.innerText = `Current Temp: ${data.main.temp}`;
+
+            let humidity = document.createElement("p");
+            humidity.innerText = `Humidity: ${data.main.humidity}`;
+            let iframe = document.createElement("iframe")
+            iframe.style = "  width: 400px;  height: 400px;"
+            iframe.src = `https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+            krishna.append( city,temp_min, temp_max,  clouds,current, humidity)
+            krishna2.append(iframe)
+            container.append(krishna, krishna2)
+  }
+    }
+    async function Weather2() {
+        try {
+             let city = document.getElementById("city").value;
+            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4c720ebec900cabef71eb3e672d8d8f0&units=metric`)
+            let data = await res.json()
+            console.log( data)
+            var res2 = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude=hourly,minutely,current&appid=4c720ebec900cabef71eb3e672d8d8f0&units=metric`);
+            var data2 = await res2.json();
+            console.log(data2)
+            const unixTime = data2.daily[0].dt;
+            const date = new Date(unixTime * 100)
+            for (var i = 0; i < data2.daily.length-1; i++) {
+
+                let box = document.createElement("div");
+                box.setAttribute("clsass","krishna3")
+                let dateBox = document.createElement("p");
+                const unixTime = data2.daily[i].dt;
+                const date = new Date(unixTime * 1000)
+                dateBox.innerText = date;
+                let minTempBox = document.createElement("p");
+                minTempBox.innerText = `minTemp:${data2.daily[i].temp.min}°C`;
+
+                let maxTempBox = document.createElement("p");
+                maxTempBox.innerText = `maxTemp:${data2.daily[i].temp.max}°C`
+                var weather = document.createElement("p");
+                weather.innerText =`Weather: ${data2.daily[i].weather[0].main}`;
+                box.append(dateBox, minTempBox, maxTempBox, weather)
+                document.getElementById("showData").append(box)
+
+            }
+
+        }
+        catch (err) {
+            console.log(err)
+        }
+
+    }
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <style>
+      h1{
+        text-align:center;
+      }
+
+      #movies
+      {
+        width: 90%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:15px;
+
+      }
+      #wallet
+      {
+        float: right;
+      }
+      #movies>div>img
+      {
+        width: 200px;
+        height: 200px;
+      }
+       
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Movie List</h1>
+      <h1 id="wallet"></h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    </div>
+    <div id="search_bar">
+
+      <input oninput="debounce(main,3000)" type="text" id="search" />
+      <!-- input box for searching movies with id as "search" -->
+      <!-- No button should be there for searching movies, it should search with input  -->
+    </div>
+    <br>
+    <div id="movies">
+      <!-- Append all searched movies here in grid format -->
+      <!-- Every movie card should have image, title and a book now button  -->
+      <!-- Book now buttons should have class "book_now"  -->
+    </div>
+  </body>
+</html>
+
+<script src="scripts/movies.js"></script>
+
+<!-- Create an “index.html” where you will add money to your wallet.
+It will have an input box to accept the amount and a button “add to wallet” on clicking, the amount will be added to the wallet.
+Use localstorage as your wallet. The wallet amount should be reflected on each page on the top right corner.
+On “index.html” provide a link to the “movies.html”.
+On “movies.html”, create a search bar where users can search for movies.
+Apply debouncing on search functionality. Use OMDB API to get the movie data. Also show the wallet amount on the top right corner.
+While typing, users should see relevant movies on the dom itself. There should not be any search button.
+Show the image, title and a “book now” button for every movie on the dom.
+On clicking on the “book now” button, store that movie in the localstorage and redirect the user to the “checkout.html” page.
+Where he will see the movie info which he is going to book. He will enter his name and number of tickets.
+On clicking on “Confirm Booking”, if the wallet doesn't have sufficient balance show alert “Insufficient Balance !” else deduct the relevant amount from the wallet and update the wallet and the localstorage as well.
+At the end give an alert to the user “Booking Successful!”. -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    
+    const url="https://reqres.in/api/users"
+//     fetch(url)
+//     .then(function(res){
+//         return res.json();
+
+//     })
+//     .then (function(res){
+// console.log(res)
+// appendData(res.data)
+//     })
+//     .catch(function(err){
+//         console.log(err)
+//     })
+async function getData(){
+    try{
+        let res=await fetch(url)
+        let data=await res.json();
+        appendData(data)
+        console.log(data)
+    }
+    catch(err){
+console.log(err);
+    }
+}
+function appendData(data){
+    const container=document.getElementById("container")
+   
+        let div=document.createElement("div")
+        let first_name=document.createElement("p");
+        first_name.innerText=data.first_name;
+        let last_name=document.createElement("p");
+        last_name.innerText=el.last_name;
+        let avatar=document.createElement("img")
+        avatar.src=el.avatar;
+        div.append(first_name,last_name,avatar)
+
+container.append(div);
+        
+    
+}
+
+</script>

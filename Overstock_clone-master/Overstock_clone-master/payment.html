@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overstock | Payment</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+      /* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      :root,
+      [data-theme="dark"] {
+        --textColor: #f5f5f5;
+        --backgroundColor: #000;
+        --hoverClr: #4d4d4d;
+        --bg: #000;
+      }
+      [data-theme="default"] {
+        --textColor: #424242;
+        --backgroundColor: #fff;
+        --hoverClr: #efefff;
+        --bg: linear-gradient(
+          to right bottom,
+          #ffbfbf,
+          #e3abab,
+          #c89898,
+          #ad8585,
+          #937272
+        );
+      }
+
+      body {
+        background: var(--backgroundColor);
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      header {
+        width: 100%;
+        height: 100px;
+        padding: 3rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        background-color: #ffd2d2;
+      }
+      header label {
+        padding: 1rem 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+      }
+      header img {
+        width: 20%;
+        height: 80px;
+        cursor: pointer;
+      }
+
+      header > #logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      main {
+        padding-top: 3rem;
+      }
+
+      #container {
+        width: 40%;
+        height: 550px;
+        font-size: 1.2rem;
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+        padding: 4rem 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        background-color: #f5f5f5;
+      }
+      #container > div {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5rem;
+        height: 100%;
+      }
+      #container button {
+        border: unset;
+        padding: 1rem 2rem;
+        background-color: red;
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body data-theme="default" class="mode">
+    <header>
+      <div>
+        <label for="toggler">
+          <input type="checkbox" id="toggler" />
+          <span>Dark/Light Mode</span>
+        </label>
+      </div>
+      <div id="logo">
+        <img src="https://bit.ly/3Fwopqw" alt="" />
+      </div>
+    </header>
+    <main>
+      <div id="container"></div>
+    </main>
+  </body>
+</html>
+
+<script>
+  let userdata = JSON.parse(localStorage.getItem("userDETAILS")) || null;
+  let totalPrice = localStorage.getItem("totalPrice");
+
+  let container = document.getElementById("container");
+
+  let {
+    city,
+    customer_name,
+    flat_no,
+    landmark,
+    locality,
+    mobile,
+    pincode,
+    state,
+  } = userdata;
+
+  container.innerHTML = null;
+
+  let box = document.createElement("div");
+  let namE = document.createElement("h3");
+  namE.textContent = `Name :  ${customer_name}`;
+
+  let cityname = document.createElement("h3");
+  cityname.textContent = `Cityname :  ${city}`;
+
+  let mobilE = document.createElement("h3");
+  mobilE.textContent = `Mob Number :  ${mobile}`;
+
+  let landmarK = document.createElement("h3");
+  landmarK.textContent = `Landmark :  ${mobile}`;
+
+  let pin = document.createElement("h3");
+  pin.textContent = `Pincode :  ${pincode}`;
+
+  let local = document.createElement("h3");
+  local.textContent = `Locality :  ${locality}`;
+
+  let payment = document.createElement("button");
+  payment.textContent = `Pay now $${totalPrice}`;
+
+  box.append(namE, mobilE, cityname, local, landmarK, pin, payment);
+  container.append(box);
+</script>
+
+<script>
+  let elements = document.getElementsByClassName("mode");
+  for (let i = 0; i < elements.length; i++) {
+    document
+      .getElementById("toggler")
+      .addEventListener("change", function (event) {
+        if (event.target.checked) {
+          elements[i].removeAttribute("data-theme");
+        } else {
+          elements[i].setAttribute("data-theme", "default");
+        }
+      });
+  }
+
+  let btn = document.querySelector("button");
+  btn.onclick = () => {
+    window.location.href = "/otp/get.html";
+  };
+</script>

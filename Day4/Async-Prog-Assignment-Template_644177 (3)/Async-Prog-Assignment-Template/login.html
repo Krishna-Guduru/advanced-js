@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <style>
+            #container{
+                width: 100%;
+                height: 80px;
+                background-color: rgb(64, 70, 70);
+                display: flex;
+                gap: 20px;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+                display: grid;
+                gap: 20px;
+            }
+            .page{
+                color: white;
+            }
+             .child1{
+                 display: flex;
+            align-items: flex-end;
+            gap: 40px;
+            margin-left:70%;
+            } 
+            #login-form-div{
+margin-top: 100px;
+text-align: center;
+            }
+                </style>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="child1">
+    <h2 class="page">
+        <a href="signup.html">signup</a>
+    
+    </h2>
+    <h2 class="page">
+        <a href="login.html">login</a>
+    
+    </h2>
+    <h2 class="page">
+        <a href="index.html">home</a>
+    
+    </h2>
+    </div>
+        </div>
+
+        <div id="login-form-div">
+
+            <form id="form">
+                <input type="email" placeholder="E-mail" class="style2" id="email">
+                <p></p>
+                <input type="password" placeholder="Password" class="style2" id="password">
+                <p></p>
+                <input type="submit" value="LOGIN" class="style3">
+            </form>
+
+        </div>
+    </body>
+    <!-- src="../js/singnup.js"> -->
+</html>
+<script src="scripts/login.js">
+</script>

@@ -1,0 +1,117 @@
+:root {
+    --black: #46494c;
+    --gray: #c5c3c6;
+    --white: #dcdcdd;
+    --dBlue: #1d3557;
+  }
+  a {
+    text-decoration: none;
+  }
+#cardsFlip{
+ background-color: var( --backgroundColor);
+}
+#cardsFlip > section > h1{
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--textColor);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+  .body-container-1 {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .cards-wrapper {
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+  }
+  .card-container {
+    background: var(--white);
+    min-height: calc(75vh - 40px);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 999px;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    font-family: 'Raleway', sans-serif;
+
+  }
+  .card-header {
+    border-radius: 5px 5px 0 0;
+    background: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 1.5rem;
+  }
+  .card-header h3 {
+    font-size: 1rem;
+    color: var(--dBlue);
+  }
+  .card-header > div{
+      justify-self: end;
+      display: flex;
+      align-items: flex-end;
+      gap: 1rem;
+  }
+  .card-header > div:nth-child(2){
+      justify-self: start;
+  }
+  .card-header img{
+      width: 40px;
+      height: 40px;
+  }
+  .card-header .card-close {
+    color: var(--dBlue);
+    font-size: 2rem;
+    justify-self: flex-end;
+  }
+  .card-content {
+    padding: 20px 5rem 0;
+    text-align: center;
+
+  }
+
+  .card-content .card-next {
+    padding: 10px 20px;
+    display: inline-block;
+    background: var(--dBlue);
+    margin-top: 20px;
+    border-radius: 3px;
+    color: var(--gray);
+    font-weight: 700;
+  }
+  .cards {
+    transition: left 400ms ease-in-out, width 400ms ease-in-out,
+      top 400ms ease-in-out;
+  }
+  .card-content > #card{
+      margin-top: 2%;
+      display: flex;
+      gap: 3rem;
+      
+  }
+  #card > #text{
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      text-align: left;
+
+  }
+  #card h1{
+      margin-top: 3%;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+  }
+  #card p{
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 2rem;
+  }
+  .card-content > #card img{
+      width: 300px;
+      height: 280px;
+  }

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root,
+[data-theme="dark"] {
+  --textColor: #f5f5f5;
+  --backgroundColor: #000;
+  --hoverClr: #4d4d4d;
+}
+[data-theme="default"] {
+  --textColor: #424242;
+  --backgroundColor: #fff;
+  --hoverClr: #efefff;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 3rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #ffd2d2;
+}
+header label {
+  padding: 1rem 0;
+  border-bottom: 3px solid #fd5757;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+header img {
+  width: 20%;
+  height: 80px;
+  cursor: pointer;
+}
+
+header > #logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+}
+main {
+  width: 100%;
+  margin-top: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  background-color: var(--backgroundColor);
+}
+
+main > section {
+  padding: 3rem 2rem;
+  flex: 1;
+}
+main h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--textColor);
+  font-size: 1.8rem;
+}
+
+main #cartdetails {
+  padding: 2rem 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+main #wishdetails h3,
+main #cartdetails > * {
+  font-family: "Raleway", sans-serif;
+  background-color: #ffcece;
+  padding: 0.4rem 1rem;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  cursor: default;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+main #wishdetails {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main #cartdetails h3:nth-of-type(3) {
+  background-color: #ff8484;
+}
+
+main #cartdetails h3:nth-of-type(3):hover {
+  background-color: #fd5757;
+  cursor: pointer;
+}
+main #cartContainer {
+  padding: 2rem 0;
+  width: 100%;
+  background-color: var(--backgroundColor);
+}
+
+#wishContainer .wishBox,
+#cartContainer > .box {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  border: 1px solid #efefff;
+}
+#wishContainer > .wishBox > *,
+#cartContainer > .box > * {
+  flex: 1;
+  height: 100%;
+}
+#cartContainer > .box > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+#wishContainer > .wishBox img,
+#cartContainer > .box img {
+  width: 90%;
+  border-radius: 0.4rem;
+}
+
+.wishBox:hover,
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 0.8rem;
+}
+
+.box i {
+  color: var(--textColor);
+  padding: 1rem;
+  display: block;
+}
+
+.wishBox i:hover,
+.box i:hover {
+  color: red;
+}
+
+.box i:nth-of-type(2) {
+  color: red;
+}
+
+main .fa-heart-circle-plus:hover,
+main .fa-cart-arrow-down:hover {
+  color: #77c700;
+}
+
+.wishBox > *,
+.box > * {
+  text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  main .box,
+  main img .wishBox img {
+    width: 80%;
+  }
+}
+
+main h1::selection {
+  user-select: none;
+}

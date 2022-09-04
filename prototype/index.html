@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn" onclick="myFunction()">Count!</button>
+    <p id="demo">0</p>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+</body>
+</html>
+<script>
+// var sData = 'Wisen';
+console.log("sdfr")
+document.getElementById("btn").addEventListener("click",function cd(){
+  console.log("rfgt")
+})
+console.log("dfhwrih")
+// Function.prototype.construct = function(aArgs) {
+//   let oNew = Object.create(this.prototype);
+//   this.apply(oNew, aArgs);
+//   return oNew;
+// };
+
+// function MyConstructor() {
+//   for (let nProp = 0; nProp < arguments.length; nProp++) {
+//     this['property' + nProp] = arguments[nProp];
+//   }
+// }
+
+// let myArray = [4, 'Hello world!', false];
+// let myInstance = MyConstructor.construct(myArray);
+
+// console.log(myInstance.property1);                
+// console.log(myInstance instanceof MyConstructor()); 
+// console.log(myInstance.constructor)
+// const array = ['a', 'b'];
+// const elements = [0, 1, 2];
+// array.push.apply(array, elements);
+// console.info(array); // ["a", "b", 0, 1, 2]
+
+// function sample(name) {
+//     console.log("samaple",name)
+// }
+// sample.apply(null,["krishna"])
+
+// console.log("I m a good boy")
+// console.log("I m a \good\" boy.")
+// function Vehicle(model, color, year, country) {
+//     this.model = model;
+//     this.color = color;
+//     this.year = year;
+//     this.country = country;
+// }
+
+// var car = new  Vehicle("Honda", "white", "2010", "UK");
+// console.log(car);
+
+// const aob = 
+// [
+//     { framework: 'React.JS', website: 'Paypal' },
+//     { framework: 'React.JS', website: 'Tesla' },
+//     { framework: 'Angular', website: 'Google' },
+//     { framework: 'Vue.JS', website: 'Vue' },
+//     { framework: 'JavaScript', website: 'inblack67' },
+// ]
+// const superAob = (data, victim) => {
+
+//     const obj = {};
+  
+//     data.forEach((data) => {
+//         if(data.hasOwnProperty(victim)){
+//             if(obj[data[victim]]){
+//                 obj[data[victim]]++;
+//             }
+//             else{
+//                 obj[data[victim]] = 1;
+//             }
+//         }
+//     })
+  
+//     let superArrayOfObjects = [];
+  
+//     for (const key in obj) {
+//         superArrayOfObjects = [...superArrayOfObjects, { victim: key, count: obj[key]}];
+//     }
+  
+//     return superArrayOfObjects;
+// }
+
+// console.log(superAob(aob, 'framework'));
+// function foo() {
+//     let x =0
+//     let y = 0;
+//     x++;
+//     y++;
+//     return x;
+//     return y;
+
+// }
+
+// console.log(foo(), typeof x, typeof y);
+// console.log(0.1+0.2+0.3==0.1+0.2+0.3)
+
+// function User(name, age) {
+//     this.name = name;
+//     this.age = age;
+
+//     this.getProfile = function() {
+//         // Outer function context
+//         console.log(this.constructor.name); // User
+//         return () => {
+//             // Inner function context
+//             console.log(this.constructor.name); // User(Get it from the outer context)
+//             console.log("I'm " + this.name + ", " + this.age + " yrs old");
+//         };
+//     }
+// }
+
+// let user = new User('John', 25);
+// let profile = user.getProfile()
+// profile()
+// function Person(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
+
+// const member = new Person('Lydia', 'Hallie');
+// // console.log(member)
+
+// Person.prototype.getFullName = function() {
+//   return `${this.firstName} ${this.lastName}`;
+// };
+
+// function getAge() {
+//   'use strict';
+//  let   age = 21;
+//   console.log(age);
+// }
+// getAge()
+// const sum = eval("10*10+5");
+// console.log(sum)
+// console.log(member.getFullName());
+// for (var i = 1; i < 5; i++) {
+//   if (i === 3);
+//   console.log(i);
+// // }
+// const person = { name: 'Lydia' };
+
+// function sayHi(age) {
+//   return `${this.name} is ${age}`;
+// }
+
+// console.log(sayHi.call(person, 21));
+// console.log(sayHi.apply(person, [21]));
+// 0;
+// new Number(0);
+// ('');
+// (' ');
+// new Boolean(false);
+// undefined;
+// const numbers = [1, 2, 3];
+// numbers[12] = 11;
+// console.log(numbers);
+// function add() {
+//   let counter = 0;
+//   function plus()
+//    {counter += 1;}
+//   plus();  
+//   return counter; 
+// }
+// add()
+// const add= (function(){
+// let counter=0
+//  return function()
+//  {counter+=1;return counter} 
+ 
+
+// })()
+// function myFunction(){
+//   document.getElementById("demo").innerHTML = add();
+// }
+// function Person(first, last, age, eyecolor) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eyecolor;
+// }
+// const data=  new Person("krishna","guduru",23,"blue")
+//  console.log(data)
+//  const data=Person.prototype.name = function() {
+//   return this.firstName + " " + this.lastName;
+// };
+
+// function Person(first, last, age, eyecolor) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eyecolor;
+// }
+
+// Person.prototype.nationality = "English";
+// const data=new Person("krishna","sai",23,"blue")
+// console.log(data.nationality)
+const url = 'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json';
+const url2 ='https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found';
+const url3 ='https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+
+// let fetchPromise =fetch(url)
+// fetchPromise.then(function(res,reject){
+//   return res.json()
+// })
+// .then (function(res,reject){
+//   console.log(res)
+// })
+// .then(function(err){
+//   console.log(err)
+// })
+// async function fetchPromise(){
+//   try{
+//   let res=await fetch(url,url,url2)
+//   let data= await res.json()
+//   console.log(data)
+//   }
+//   catch (err){
+// console.log(err)
+//   }
+// }
+// fetchPromise()
+// const birds = ['Parrot', 'Falcon', 'Owl'];
+
+// for (const bird of birds) {
+//   console.log(bird);
+// }
+// const numbers = [45, 4, 9, 16, 25];
+// const over18 = numbers.filter(myFunction);
+
+// function myFunction(value, index, array) {
+//   return index ==[1];
+// }
+// console.log(over18)
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(function(acc,curentvalue){
+
+//  return acc+curentvalue},1);
+// console.log(sum)
+// // dskfepwikfiwrkaf
+// // rfkr5etgitgk
+// class Calc {
+// 	constructor() {
+// 		this.count = 0 
+// 	}
+
+// 	increase() {
+// 		this.count ++
+// 	}
+// }
+
+// const calc = new Calc()
+// new Calc().increase()
+
+// console.log(calc.count)
+// function getFruit(fruits) {
+// 	console.log(fruits?.[1]?.[1])
+// } getFruit()
+// const arr=[1,2,3]
+// arr.push(4)
+// console.log(arr)
+// const add = x => x + x;
+// console.log(add)
+
+// function myFunc(num = 2, value = add(num)) {
+//   console.log(num, value);
+// }
+
+// myFunc();
+// myFunc(3);
+// const myPromise = Promise.resolve(Promise.resolve('Promise'));
+
+// function funcOne() {
+//   setTimeout(() => console.log('Timeout 1!'), 0);
+//   myPromise.then(res => res).then(res => console.log(`${res} 1!`));
+//   console.log('Last line 1!');
+// }
+
+// async function funcTwo() {
+//   setTimeout(() => console.log('Timeout 2!'), 0);
+//   const res = await myPromise;
+//   console.log('Last line 2!');
+//   console.log(`${res} 2!`)
+  
+  
+// }
+
+// funcOne();
+// funcTwo();
+
+
+// const person = {
+//   firstName: 'Lydia',
+//   lastName: 'Hallie',
+//   pet: {
+//     name: 'Mara',
+//     breed: 'Dutch Tulip Hound',
+//   },
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// console.log(person.pet?.name);
+// console.log(person.pet?.family?.name);
+// console.log(person.getFullName?.());
+// console.log(member.getLastName?.());
+//  function object(name,age) {
+//    this. name="Sudheer",
+//    this.  age= 34
+// };
+//  var c1= this.name="krishna"
+//  var c2=this.age=24
+//  var c3=new Object.create(c1,c2)
+// console.log(c3)
+
+// console.log(a)
+// function  x (y){
+//   console.log("edew")
+//   y()
+// }
+// x(function y(){
+//   console.log("aedQH")
+// })
+
+</script>

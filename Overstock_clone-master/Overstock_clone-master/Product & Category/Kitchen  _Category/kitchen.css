@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/* box-shadow: -0.1rem 0 3rem #505050; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root,
+[data-theme="dark"] {
+  --textColor: #f5f5f5;
+  --backgroundColor: #000;
+  --hoverClr: #4d4d4d;
+}
+[data-theme="default"] {
+  --textColor: #424242;
+  --backgroundColor: #fff;
+  --hoverClr: #efefff;
+}
+::selection {
+  user-select: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 3rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #ffd2d2;
+  z-index: 9999;
+}
+header label {
+  padding: 1rem 0;
+  border-bottom: 3px solid #fd5757;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+header img {
+  width: 20%;
+  height: 80px;
+  cursor: pointer;
+}
+
+header > #logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid #ddd;
+}
+
+#title {
+  font-weight: 700;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
+#title > h1 {
+  width: 96%;
+  font-size: 1.9rem;
+  margin: auto;
+}
+
+main .fa-bars {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: none;
+  position: absolute;
+  bottom: 101%;
+}
+
+/* Main hero section */
+main {
+  width: 100%;
+  padding: 1rem 1.4rem;
+  display: flex;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  position: relative;
+}
+
+main > #left {
+  flex: 1.2;
+}
+main > #right {
+  flex: 4;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "one one two"
+    "one one three";
+  gap: 1rem;
+}
+main > #right > div {
+  background-color: var(--backgroundColor);
+  cursor: pointer;
+}
+main > #right > div:nth-child(1) {
+  grid-area: one;
+  background: url("https://bit.ly/3KE6SgY") center/cover no-repeat;
+}
+main > #right > div:nth-child(2) {
+  grid-area: two;
+  background: url("https://bit.ly/3yb7pnL") center/cover no-repeat;
+}
+main > #right > div:nth-child(3) {
+  grid-area: three;
+  background: url("https://bit.ly/385FB9L") center/cover no-repeat;
+}
+main #offers {
+  width: 230px;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  background-color: #008080;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main #offers > span:nth-child(1),
+main #offers > span:nth-child(2) {
+  font-size: 1.8rem;
+}
+main #offers > span:nth-child(4) {
+  border: 2px solid #fff;
+  align-self: center;
+  padding: 0.8rem 1rem;
+}
+
+main ul {
+  padding: 1rem 1rem 1rem 0;
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+main ul > li {
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+}
+
+main ul > li:hover {
+  border-left: 3px solid blue;
+  background-color: var(--hoverClr);
+}
+main ul > li:nth-of-type(10) {
+  color: red;
+  font-weight: 600;
+}
+main ul > li:nth-of-type(10):hover {
+  border-left: 3px solid red;
+  background-color: #ffe9e9;
+}
+
+#change {
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#change > div {
+  border: 2px solid blue;
+}
+
+#change > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*.popular section */
+.pop_shop {
+  width: 100%;
+  padding-top: 10rem;
+  background-color: var(--backgroundColor);
+}
+.pop_shop > h1,
+.pop_shop > #container {
+  color: var(--textColor);
+  width: 96%;
+  margin: auto;
+}
+.pop_shop > h1 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.pop_shop > #container {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  row-gap: 2.5rem;
+}
+#container > div {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  cursor: pointer;
+}
+#container img {
+  display: block;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+#container h4 {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+#container > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#shopMore {
+  padding-top: 8rem;
+}
+#shopMore > #container {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Cards flip*/
+#cardsFlip {
+  padding-top: 7rem;
+}
+#cardsFlip > h1 {
+  text-align: center;
+}
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (min-width: 551px) and (max-width: 850px) {
+  main .fa-bars {
+    display: block;
+    padding: 1rem 0;
+    color: var(--textColor);
+  }
+  main > #left {
+    display: none;
+  }
+  main > #left > ul {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  #title > h1 {
+    text-align: center;
+  }
+
+  .cards-wrapper {
+    width: 90vw;
+    margin: auto -10%;
+  }
+  .card-content > #card {
+    flex-direction: column;
+    gap: unset;
+  }
+  .card-content > #card img {
+    width: 200px;
+    height: 100px;
+  }
+  #card > #text {
+    text-align: center;
+    gap: unset;
+  }
+  #card p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  #card h1 {
+    font-size: 1.2rem;
+  }
+  header img {
+    width: 50%;
+  }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-width: 550px) {
+  main .fa-bars {
+    display: none;
+  }
+
+  main > #left {
+    display: none;
+  }
+
+  #title > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  main #right {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "one one"
+      "two three";
+  }
+  #shopMore > #container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #cardsFlip {
+    display: none;
+  }
+
+  header img {
+    width: 60%;
+  }
+}

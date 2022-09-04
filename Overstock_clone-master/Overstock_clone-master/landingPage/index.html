@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Overstock | Homepage</title>
+
+    <link
+      rel="stylesheet"
+      href="/Edited/home-proj-sathan-hari/styles/timeDeal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Edited/home-proj-sathan-hari/styles/autoSlide.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Edited/home-proj-sathan-hari/styles/navbar.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url(“https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap”);
+      /* font-family: ‘Montserrat’, sans-serif;
+font-family: ‘Raleway’, sans-serif; */
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      #siteproduct{
+        cursor: pointer;
+        color: red;
+        font-weight: 900;
+        font-size: 1rem
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- starting Of Navbar ------------------------------------>
+    <div>
+      <div id="top_bar">
+        <p>
+          Ships to:
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/330/330459.png"
+            alt=""
+            id="india_logo"
+          />
+          <b>US</b>
+        </p>
+      </div>
+
+      <hr id="top_hr" style="margin-bottom: -20px" />
+      <p class="nav_text" id="checkout_nav">Check Out</p>
+
+      <nav id="navbar">
+        <svg
+          id="logo_navbar"
+          height="32"
+          width="181"
+          color="#FF1F2C"
+          viewBox="0 0 164 29"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <g fill="#000">
+              <path
+                d="M164 23.126h-.274v-1.96h-.01l-.764 1.96h-.178l-.763-1.96H162v1.96h-.275v-2.188h.506l.631 1.617h.01l.622-1.617H164v2.188zm-2.684-1.98h-.705v1.98h-.274v-1.98h-.705v-.208h1.684v.208zM34.58 14.78c0 3.558 1.94 7.117 5.855 7.117 3.914 0 5.855-3.559 5.855-7.118 0-3.558-1.94-7.117-5.855-7.117-3.915 0-5.856 3.559-5.856 7.117m13.75 0c0 4.788-2.783 8.833-7.894 8.833-5.112 0-7.894-4.045-7.894-8.833s2.782-8.831 7.894-8.831c5.111 0 7.894 4.043 7.894 8.831M47.965 6.433h2.264l5.241 14.655h.065l5.176-14.655h2.103L56.57 23.126h-2.167zM75.506 13.615C75.409 10.54 73.5 7.662 70.2 7.662c-3.332 0-5.176 2.912-5.5 5.953h10.806zM64.7 15.329c.032 2.977 1.585 6.568 5.5 6.568 2.977 0 4.594-1.747 5.24-4.27h2.04c-.874 3.785-3.074 5.984-7.28 5.984-5.306 0-7.538-4.076-7.538-8.832 0-4.4 2.232-8.831 7.538-8.831 5.37 0 7.506 4.69 7.344 9.381H64.7zM98.486 11.318c-.097-2.524-2.038-3.656-4.367-3.656-1.812 0-3.947.712-3.947 2.88 0 1.811 2.07 2.458 3.462 2.814l2.717.615c2.33.355 4.756 1.714 4.756 4.626 0 3.623-3.591 5.015-6.697 5.015-3.883 0-6.535-1.812-6.859-5.889h2.039c.162 2.75 2.2 4.174 4.917 4.174 1.91 0 4.562-.841 4.562-3.17 0-1.941-1.812-2.589-3.656-3.042l-2.62-.582c-2.653-.712-4.66-1.618-4.66-4.465 0-3.397 3.333-4.69 6.277-4.69 3.332 0 5.985 1.747 6.114 5.37h-2.038zM106.109 6.433h3.397v1.714h-3.397v11.259c0 1.326.194 2.103 1.65 2.2.582 0 1.165-.033 1.747-.097v1.747c-.615 0-1.197.064-1.812.064-2.718 0-3.656-.905-3.623-3.752V8.148h-1.973V6.432h1.973V1.419h2.038v5.014zM111.924 14.78c0 3.558 1.941 7.117 5.856 7.117s5.856-3.559 5.856-7.118c0-3.558-1.941-7.117-5.856-7.117s-5.856 3.559-5.856 7.117m13.75 0c0 4.788-2.783 8.833-7.894 8.833-5.111 0-7.894-4.045-7.894-8.833s2.783-8.831 7.894-8.831c5.111 0 7.894 4.043 7.894 8.831M140.117 11.674c-.55-2.491-2.07-4.012-4.723-4.012-3.915 0-5.856 3.559-5.856 7.117 0 3.56 1.94 7.118 5.856 7.118 2.523 0 4.594-1.974 4.852-4.756h2.038c-.55 4.012-3.17 6.47-6.89 6.47-5.112 0-7.894-4.043-7.894-8.832 0-4.788 2.782-8.832 7.894-8.832 3.559 0 6.308 1.91 6.761 5.727h-2.038zM144.425.027h2.038v14.494l9.253-8.088h2.717l-7.117 6.179 7.603 10.514h-2.556l-6.6-9.09-3.3 2.75v6.34h-2.038zM87.083 6.28c-2.342.324-4.105 1.796-4.981 4.067h-.065V6.433H80.16v16.693H82.2V14.23c0-3.03 1.931-5.488 4.884-5.926V6.28z"
+              ></path>
+            </g>
+            <g fill="#FF1F2C">
+              <path
+                d="M.666.06v14.66C2.828 8.896 8.816 4.443 14.9 4.443c6.74 0 11.04 5.464 9.609 12.202-1.105 5.195-5.295 9.628-10.243 11.388h14.374V.061H.666z"
+              ></path>
+              <path
+                d="M20.04 16.645c0-5.824-3.463-10.547-7.734-10.547s-7.734 4.723-7.734 10.547c0 5.825 3.463 10.547 7.734 10.547s7.734-4.722 7.734-10.547"
+              ></path>
+            </g>
+          </g>
+        </svg>
+
+        <div id="nav_div">
+          <svg
+            id="logo_person_navbar"
+            class="UserDropDowns_icon_06"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            stroke="#2F3337"
+            fill="#2F3337"
+          >
+            <title>User</title>
+            <path
+              d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
+              stroke="inherit"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <p class="nav_text" id="account">Account</p>
+
+          <svg
+            id="logo_heart_navbar"
+            class="UserDropDowns_icon_06"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            stroke="#2F3337"
+            fill="#2F3337"
+          >
+            <title>Heart</title>
+            <path
+              d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
+              fill="none"
+              stroke="inherit"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+
+          <p class="nav_text" id="heart">Lists</p>
+
+          <svg id="logo_cart_navbar">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+              stroke="none"
+              fill="inherit"
+            ></path>
+          </svg>
+          <p class="nav_text" id="cart_nav">Cart</p>
+          <p id="total_cart">0</p>
+        </div>
+
+        <div id="search_input">
+          <input type="text" id="searchbar" placeholder="Search" />
+          <svg
+            onclick="pagereload()"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            stroke="#2F3337"
+            fill="#FFFFFF"
+          >
+            <title>Search</title>
+            <path
+              d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z"
+              stroke="inherit"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <div id="inputdiv"></div>
+          <div id="inputdiv2"></div>
+        </div>
+
+        <button id="lock_btn">
+          <svg
+            stroke-width="0"
+            class="Checkout_lockSVG_27"
+            width="24"
+            height="24"
+            viewBox="0 0 29 29"
+            stroke="#2F3337"
+            fill="#2F3337"
+          >
+            <title>Lock</title>
+            <path
+              d="M12 1a4.95 4.95 0 00-5 5v3h10V6a4.95 4.95 0 00-5-5zM19 9H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V11a2 2 0 00-2-2z"
+              stroke="inherit"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M12 17a2 2 0 100-4 2 2 0 000 4zM12 17v2"
+              stroke="inherit"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+
+        <hr id="hr_media2" />
+        <div class="home">
+          <div id="navigate">
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm1()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Furniture
+              </button>
+              <div id="myDropdownm1" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm2()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Rugs
+              </button>
+              <div id="myDropdownm2" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm3()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Decor
+              </button>
+              <div id="myDropdownm3" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm4()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Bed & Bath
+              </button>
+              <div id="myDropdownm4" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm5()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Home Improvement
+              </button>
+              <div id="myDropdownm5" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm6()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Kitchen
+              </button>
+              <div id="myDropdownm6" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm6()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Outdoors
+              </button>
+              <div id="myDropdownm6" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm7()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Jewelry
+              </button>
+              <div id="myDropdownm7" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm8()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Lighting
+              </button>
+              <div id="myDropdownm8" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm9()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Kids & Baby
+              </button>
+              <div id="myDropdownm9" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm10()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                More
+              </button>
+              <div id="myDropdownm10" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            |
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm11()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0"
+              >
+                Ideas
+              </button>
+              <div id="myDropdownm11" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdownnav">
+              <button
+                onclick="myFunctionm12()"
+                class="dropbtn btn_hover_nav"
+                style="padding: 0; color: red"
+              >
+                Sales & Deals
+              </button>
+              <div id="myDropdownm12" class="dropdown-content_nav">
+                <div id="table">
+                  <div class="nav_div">
+                    <div><b>Dinnerware</b></div>
+
+                    <div>Dinnerware Sets</div>
+                    <div>Formal Dinnerware</div>
+                    <div>Plates</div>
+                    <div>Bowls</div>
+                    <div>Cups & Sausers</div>
+                    <div>Mugs</div>
+                    <div>Flatware</div>
+                    <div>Tumblers</div>
+                    <div>Glasses & Barware</div>
+                    <div><b>Cookware & Bakeware</b></div>
+                    <div>Cookware Sets</div>
+                    <div>Pots & Pans</div>
+                    <div>Speciality Cookware</div>
+                    <div>Grill Pans & Griddles</div>
+                    <div>Cooking Essentials</div>
+                    <div>Cutlery</div>
+                    <div>Bakeware</div>
+                    <div></div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Kitchen Furniture</b></div>
+                    <div>Counter & Bar Stools</div>
+                    <div>Kitchen & Dinning Sets</div>
+                    <div>Kitchen & Dinning Chairs</div>
+                    <div>Kitchen & Dinning Tables</div>
+                    <div>Buffets & Sideboards</div>
+                    <div>Home Bars</div>
+                    <div>Kitchen Carts</div>
+                    <div>Bar Tables</div>
+                    <div>Kitchen Cabinets</div>
+                    <div><b>Kitchen Appliences</b></div>
+                    <div>Mixer</div>
+                    <div>Blenders</div>
+                    <div>Coffee Makers</div>
+                    <div>Air Fryers</div>
+                    <div>Pressure Cookers</div>
+                    <div>Food Proccesors</div>
+                    <div>Major Appliances</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div><b>Serveware</b></div>
+                    <div>Serving Platers & Trays</div>
+                    <div>Serving Bowls</div>
+                    <div>Warming Buffets & Trays</div>
+                    <div>Drink Pitchers</div>
+                    <div>Salt & Pepper Shakers</div>
+                    <div>Chips & Dips Sets</div>
+                    <div>Table Linens</div>
+                    <div><b>Kitchen Storage</b></div>
+                    <div>Wine Racks</div>
+                    <div>Kitchen Trash cans</div>
+                    <div>Pot Racks</div>
+                    <div>Pantry storage</div>
+                    <div>Kitchen Canisters</div>
+                    <div>Plastic Storage Containers</div>
+                  </div>
+
+                  <div class="nav_div">
+                    <div>
+                      <img
+                        style="height: 160px"
+                        src="https://ak1.ostkcdn.com/images/products/7508194/Hamilton-Beach-26030-Belgian-Waffle-Maker-9e4e0fb9-116d-44c4-9b97-2805b4e2519c_1000.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div style="font-size: 18px">Extra 15% Off</div>
+                    <div style="font-size: 20px; font-weight: lighter">
+                      Select Kitchen & Dinning*
+                    </div>
+                    <div><br /></div>
+                    <div><b>More Ways To Shop</b></div>
+                    <div><b style="color: red">Featured sales</b></div>
+                    <div><b style="color: red">New Arrivals</b></div>
+                    <div><b style="color: red">Clearance</b></div>
+                    <div><b style="color: red">kitchen Advice</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="hidden">
+        <div class="dropdownacc" style="top: 10px">
+          <button class="dropbtnacc"></button>
+          <div class="dropdown-contentacc">
+            <a href="#">My Account</a>
+            <a href="#">My Orders</a>
+            <a href="#">My Reviews</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Help</a>
+            <a href="#">
+              <hr />
+            </a>
+            <a href="#">Sign Out</a>
+          </div>
+        </div>
+
+        <div class="dropdownacc" style="top: 10px">
+          <button class="dropbtnacc"></button>
+          <div class="dropdown-contentacc">
+            <a href="#">Favorites</a>
+            <a href="#">Save For Later</a>
+            <a href="#">
+              <hr />
+            </a>
+            <a href="#">View All My Lists</a>
+            <a href="#">Find a List</a>
+          </div>
+        </div>
+      </div>
+
+      <hr id="hr_media" />
+    </div>
+
+    <!-- End of navbar -------------------------------------- -->
+
+    <!-- End of navbar ---------------------------------------->
+
+    <!-- slider top start -->
+    <div id="landingTop">
+      <div id="leftContainer">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img
+              src="/Edited/home-proj-sathan-hari/images/motherDay.png"
+              alt=""
+            />
+          </div>
+
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="/Edited/home-proj-sathan-hari/images/bed.png" />
+              <!-- <div class="text">Shop now</div> -->
+            </div>
+          </a>
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="/Edited/home-proj-sathan-hari/images/sofa.png" />
+            <!-- <div class="text">Shop now</div> -->
+          </div>
+
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a> -->
+          <!-- <div class="text" style="color: black">
+            <a href="prod.html"> Shop now </a>
+          </div> -->
+        </div>
+        <br />
+
+        <div id="dotsContainer">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <div id="rightGrid">
+        <div>
+          <img src="/Edited/home-proj-sathan-hari/images/outdoor.png" alt="" />
+        </div>
+        <div>
+          <img src="/Edited/home-proj-sathan-hari/images/living.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- slider top end -->
+
+    <!-- div below slider starts -->
+
+    <h1 id="heading1">Limited-Time Deals</h1>
+    <div id="timemain">
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_HB_DOMESTIC_1.svg?imwidth=1920"
+        />
+        <h4>Select Area Rugs by Safavie</h4>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_HB_DOMESTIC_2.svg?imwidth=1920"
+        />
+        <h4>Select Garden & Partio</h4>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_HB_DOMESTIC_3.svg?imwidth=1920"
+        />
+        <h4>Select Furniture</h4>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_HB_DOMESTIC_4.svg?imwidth=1920"
+        />
+        <h4>Select Home Decor</h4>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_V3_HB_DOMESTIC_5.svg?imwidth=1920"
+        />
+        <h4>Select Bedding & Bath</h4>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/04292022_HB_DOMESTIC_6.svg?imwidth=1920"
+        />
+        <h4>Select Lightning & Ceiling Fans</h4>
+      </div>
+    </div>
+
+    <!-- homedec -->
+
+    <div id="homedec">
+      <video
+        src="/Edited/home-proj-sathan-hari/mom.mp4"
+        muted
+        autoplay
+        loop
+      ></video>
+      <!-- <img src="https://ak1.ostkcdn.com/img/mxc/04282022_HomeDecorRefresh_Desktopv2.svg?imwidth=1920" alt=""> -->
+    </div>
+
+    <!-- Fresh Finds In Each Category -->
+
+    <h1 id="heading2">Fresh Finds In Each Category</h1>
+    <div id="fresh">
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Furniture.png?imwidth=1920"
+        />
+        <p>Furniture</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-AreaRugs.png?imwidth=1920"
+        />
+        <p>Area Rugs</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-BedBath.png?imwidth=1920"
+        />
+        <p>Bed & Bath</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Decor.png?imwidth=1920"
+        />
+        <p>Home Decor</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/CatSilo-Window-040721.jpg?imwidth=1920"
+        />
+        <p>Window Treatment</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Kitchen.png?imwidth=1920"
+        />
+        <p>Kitchen</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Outdoor.png?imwidth=1920"
+        />
+        <p>Outdoor</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-HomeImp.jpg?imwidth=1920"
+        />
+        <p>Home Improvement</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Storage.png?imwidth=1920"
+        />
+        <p>Storage</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-Mattresses.jpg?imwidth=1920"
+        />
+        <p>Mettresses</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Lighting.png?imwidth=1920"
+        />
+        <p>Lightning</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/CatSilo-AllDeals-040721.jpg?imwidth=1920"
+        />
+        <p>Shop All Deals</p>
+      </div>
+    </div>
+    <!-- New Ways to Bring Home Spring -->
+
+    <h1 id="heading3">New Ways to Bring Home Spring</h1>
+    <div id="Newway">
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_3.jpg?imwidth=1920"
+        />
+        <h3>Washable Rugs</h3>
+        <p>
+          Say goodbye to dirty rug blues with carpets that you can clean in the
+          washer.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_5.jpg?imwidth=1920"
+        />
+        <h3>Gazebos and Percolas</h3>
+        <p>
+          Add a little shade to any yard or garden with these beautiful
+          structures.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_V2_Editorial_Frame6.jpg?imwidth=1920"
+        />
+        <h3>Durable Outdoor Rugs</h3>
+        <p>Treat your feet to patio comfort with these resilient rugs.</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_2.jpg?imwidth=1920"
+        />
+        <h3>Adirontack Chairs</h3>
+        <p>Refresh your outdoor seating with this lawn & patio classic.</p>
+      </div>
+    </div>
+
+    <!-- spring -->
+
+    <div id="spring">
+      <img
+        src="https://ak1.ostkcdn.com/img/mxc/04282022_SpringTimeSlumber_Desktopv2.svg?imwidth=1920"
+        alt=""
+      />
+    </div>
+
+    <!-- Overstock Featured Brands -->
+
+    <h1 id="heading4">Overstock Featured Brands</h1>
+    <div id="overstock">
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_34762650.jpg?imwidth=1920"
+        />
+        <h5>Extra 15% off</h5>
+        <p>Select Rugs by Artistic Weavers & More*</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_33517468.jpg?imwidth=1920"
+        />
+        <h5>Save on</h5>
+        <p>Select Mattresses by TempurPedic</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_18977242.jpg?imwidth=1920"
+        />
+        <h5>Extra 15% off</h5>
+        <p>Select Furniture by Flash Furniture*</p>
+      </div>
+      <div>
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_36535383.jpg?imwidth=1920"
+        />
+        <h5>Save on</h5>
+        <p>Select Bedding by Country Living</p>
+      </div>
+    </div>
+
+    <div id="clubRewards">
+      <img
+        src="https://ak1.ostkcdn.com/img/mxc/011222-CLUBO-DSK-Non-member.svg?imwidth=1920"
+      />
+    </div>
+
+    <!-- Trending Searches -->
+
+    <h1 id="heading5">Trending Searches</h1>
+    <div id="trending">
+      <div><h5>Outdoor Rugs</h5></div>
+      <div><h5>Gaming Chairs</h5></div>
+      <div><h5>Outdoor Furniture</h5></div>
+      <div><h5>Shower Curtains</h5></div>
+      <div><h5>TV Stands</h5></div>
+      <div><h5>Coffee Tables</h5></div>
+      <div><h5>Outdoor Sofas</h5></div>
+      <div><h5>Sectionals</h5></div>
+      <div><h5>Office Chairs</h5></div>
+      <div><h5>Bar Stools</h5></div>
+      <div><h5>Computer Desks</h5></div>
+      <div><h5>Rugs</h5></div>
+    </div>
+
+    <!-- coupen -->
+
+    <div id="coupen">
+      <div id="chairlogo">
+        <svg
+          width="150px"
+          height="50px"
+          viewBox="0 0 167 44"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(1.000000, -14.000000)">
+              <g>
+                <g transform="translate(0.000000, 19.000000)">
+                  <rect
+                    stroke="#C6202D"
+                    x="0"
+                    y="0.331851852"
+                    width="35.8204426"
+                    height="26.4561653"
+                  ></rect>
+                  <rect
+                    stroke="#C6202D"
+                    x="2.13789571"
+                    y="2.51560467"
+                    width="31.6729249"
+                    height="11.2135707"
+                  ></rect>
+                  <rect
+                    stroke="#C6202D"
+                    x="2.13789571"
+                    y="13.4343687"
+                    width="31.6729249"
+                    height="10.503851"
+                  ></rect>
+                  <polygon
+                    fill="#C6202D"
+                    points="5.34473927 31.9525926 8.34848274 31.9525926 10.4222416 26.5368856 7.41849811 26.5368856"
+                  ></polygon>
+                  <polygon
+                    fill="#C6202D"
+                    points="32.8701465 31.9525926 29.866403 31.9525926 27.7926442 26.5368856 30.7963877 26.5368856"
+                  ></polygon>
+                  <ellipse
+                    fill="#C6202D"
+                    cx="18.7707243"
+                    cy="19.5052016"
+                    rx="1.66755865"
+                    ry="1.70332719"
+                  ></ellipse>
+                  <ellipse
+                    fill="#C6202D"
+                    cx="18.7707243"
+                    cy="8.58643749"
+                    rx="1.66755865"
+                    ry="1.70332719"
+                  ></ellipse>
+                </g>
+                <path
+                  fill="#C6202D"
+                  d="M162.990225,22.2599065 L162.990225,22.2599065 L158.370225,22.4076908 L158.370225,16.9489062 C158.370225,15.872555 157.425546,15 156.260225,15 L124.870225,15 C124.17571,15.0045058 123.539197,15.3586725 123.210225,15.9236522 C122.830285,15.3562301 122.162499,15.0077544 121.440225,15 L90.0602254,15 C88.9556559,15 88.0602254,15.8270664 88.0602254,16.8473044 L88.0602254,16.9396697 L88.0002254,22.3245621 L83.2602254,22.2506699 C81.9631881,22.3748304 80.9829292,23.3924244 81.0002254,24.5967466 L81.0002254,46.4041755 C81.0016019,47.1358099 81.4193933,47.8128784 82.1002254,48.1868243 L82.6802254,50.6067931 C82.7969914,51.0253923 83.2124589,51.3132029 83.6802254,51.2995323 L86.4802254,51.2995323 C86.9479918,51.3132029 87.3634593,51.0253923 87.4802254,50.6067931 L88.0902254,48.4546835 L158.250225,48.4546835 L158.860225,50.6067931 C158.976991,51.0253923 159.392459,51.3132029 159.860225,51.2995323 L162.580225,51.2995323 C163.056885,51.3102925 163.475471,51.0087228 163.580225,50.5790836 L164.160225,48.1775878 C164.8449,47.8059456 165.266755,47.1284501 165.270225,46.394939 L165.270225,24.6059831 C165.286579,23.3952386 164.295201,22.3751302 162.990225,22.2599065 L162.990225,22.2599065 L162.990225,22.2599065 Z M158.990225,23.6084387 L162.990225,23.4791274 C163.440225,23.4791274 163.990225,24.0702648 163.990225,24.6152196 L163.990225,46.4226486 C163.990317,46.766491 163.770715,47.0779894 163.430225,47.2169895 L163.430225,47.2169895 C163.3191,47.2589902 163.200292,47.2809377 163.080225,47.2816451 L160.010225,47.2816451 C159.884939,47.3060706 159.755512,47.3060706 159.630225,47.2816451 L159.540225,47.2816451 C159.464189,47.2475557 159.393538,47.2040514 159.330225,47.1523338 L159.220225,47.0414956 C159.082675,46.8914409 159.005019,46.7023432 159.000225,46.5057773 L158.990225,23.6084387 L158.990225,23.6084387 Z M88.6202254,46.4134121 L88.6202254,38.4607664 L157.680225,38.4607664 L157.680225,46.4134121 C157.679226,46.7027761 157.743953,46.989116 157.870225,47.2539356 L88.4402254,47.2539356 C88.5664977,46.989116 88.6312247,46.7027761 88.6302254,46.4134121 L88.6202254,46.4134121 L88.6202254,46.4134121 Z M124.210225,16.9489062 C124.210225,16.6071549 124.380225,16.2192209 124.860225,16.2192209 L156.240225,16.2192209 C156.678177,16.2191893 157.034751,16.5444226 157.040225,16.9489062 L157.040225,31.006893 C157.040225,31.4502461 156.610225,31.6072669 156.240225,31.6072669 L124.870225,31.6072669 C124.500225,31.6072669 124.080225,31.4502461 124.080225,31.0161295 L124.210225,16.9489062 L124.210225,16.9489062 Z M89.4002254,16.9489062 C89.4002254,16.6071549 89.5702254,16.2192209 90.0502254,16.2192209 L121.430225,16.2192209 C121.868177,16.2191893 122.224751,16.5444226 122.230225,16.9489062 L122.230225,31.006893 C122.230225,31.4502461 121.800225,31.6072669 121.430225,31.6072669 L90.0602254,31.6072669 C89.6902254,31.6072669 89.2602254,31.4502461 89.2602254,31.0161295 L89.4002254,16.9489062 L89.4002254,16.9489062 Z M90.0502254,32.8264879 L121.430225,32.8264879 C122.097213,32.8426 122.733835,32.5691032 123.150225,32.0875661 C123.564468,32.5664823 124.196721,32.83969 124.860225,32.8264879 L156.240225,32.8264879 C156.761194,32.8345718 157.268216,32.6708266 157.670225,32.3646618 L157.670225,37.250782 L88.6802254,37.250782 L88.6802254,32.3646618 C89.0826696,32.6701131 89.5893977,32.8337637 90.1102254,32.8264879 L90.0502254,32.8264879 L90.0502254,32.8264879 Z M82.3502254,24.6059831 C82.3502254,24.0610283 82.8402254,23.4698909 83.2802254,23.4698909 L87.2802254,23.5345465 L87.2802254,46.4134121 C87.2754313,46.609978 87.1977757,46.7990757 87.0602254,46.9491303 L86.9502254,47.0692051 C86.8871487,47.1212057 86.8164538,47.1647374 86.7402254,47.1985164 L86.6802254,47.1985164 C86.577974,47.2344142 86.4696108,47.2531811 86.3602254,47.2539356 L83.2602254,47.2539356 C83.1435291,47.2520669 83.0282302,47.2301412 82.9202254,47.1892799 L82.9202254,47.1892799 C82.5797355,47.0502798 82.3601333,46.7387815 82.3602254,46.394939 L82.3502254,24.6059831 L82.3502254,24.6059831 Z M86.2602254,50.0987844 L83.9502254,50.0987844 L83.5602254,48.4916296 L86.6802254,48.4916296 L86.2602254,50.0987844 L86.2602254,50.0987844 Z M162.360225,50.0987844 L160.050225,50.0987844 L159.590225,48.4731565 L162.750225,48.4731565 L162.360225,50.0987844 L162.360225,50.0987844 Z"
+                ></path>
+                <path
+                  fill="#C6202D"
+                  d="M54.24,57.24 C53.5819236,57.2308772 53.0417234,56.7168158 53,56.06 L53,55.75 C53,55.13 53.56,54.95 54.92,54.53 C55.7667855,54.2865199 56.5982671,53.992663 57.41,53.65 L57.41,34 L58.65,34 L58.65,54.43 L58.31,54.6 C57.3414436,55.0526811 56.3382481,55.4272075 55.31,55.72 L54.43,56 L63.71,56 L62.93,55.75 C61.9016717,55.4574517 60.8984569,55.0829181 59.93,54.63 L59.59,54.46 L59.59,34.01 L60.84,34.01 L60.84,53.66 C61.6517329,54.002663 62.4832145,54.2965199 63.33,54.54 C64.69,54.96 65.25,55.13 65.25,55.76 L65.25,56.01 C65.2351179,56.3607961 65.0767889,56.6900777 64.8120825,56.9207504 C64.5473761,57.1514231 64.1995354,57.2632323 63.85,57.23 L54.24,57.23 L54.24,57.24 Z"
+                ></path>
+                <path
+                  fill="#C6202D"
+                  d="M69.21,34.93 L48.54,34.93 C47.1371967,34.93 46,33.7928033 46,32.39 L46,16.54 C46,15.8663501 46.2676064,15.2202912 46.7439488,14.7439488 C47.2202912,14.2676064 47.8663501,14 48.54,14 L69.21,14 C69.8836499,14 70.5297088,14.2676064 71.0060512,14.7439488 C71.4823936,15.2202912 71.75,15.8663501 71.75,16.54 L71.75,32.39 C71.75,33.7928033 70.6128033,34.93 69.21,34.93 L69.21,34.93 Z M48.54,15.25 C47.8275527,15.25 47.25,15.8275527 47.25,16.54 L47.25,32.39 C47.25,33.1024473 47.8275527,33.68 48.54,33.68 L69.21,33.68 C69.9224473,33.68 70.5,33.1024473 70.5,32.39 L70.5,16.54 C70.5,16.1978707 70.3640897,15.8697542 70.1221677,15.6278323 C69.8802458,15.3859103 69.5521293,15.25 69.21,15.25 L48.54,15.25 Z"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div id="secondDiv">
+        <p id="topText">Sign up for exclusive updates and receive a</p>
+        <h2>15% OFF COUPON</h2>
+        <p id="small">Terms & Conditions | Privacy Policy</p>
+      </div>
+      <div id="input">
+        <input type="mail" placeholder="Your Email Address" /><button>
+          Signup
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <div id="mainFoot">
+          <div>
+            <h5>MY ACCOUNT</h5>
+            <p>Orders & Returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+          </div>
+          <div>
+            <h5>LET US HELP</h5>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+          </div>
+          <div>
+            <h5>COMPANY INFORMATION</h5>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain Transparency</p>
+          </div>
+          <div>
+            <h5>MORE WAYS TO SHOP</h5>
+            <p>Tips & Ideas</p>
+            <p>Deals</p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+          </div>
+        </div>
+        <div id="bottom">
+          <div id="botLeft">
+            <p>
+              © Copyright 2022, Overstock.com®, Inc. <br />
+              799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+            </p>
+          </div>
+          <div id="botRight">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>*Promotion Terms</p>
+            <p id="siteproduct">Site Products Data</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Edited/home-proj-sathan-hari/navbar.js"></script>
+  </body>
+</html>
+<script>
+  document.getElementById('siteproduct').onclick = () => {
+    localStorage.setItem('siteProducts', JSON.stringify(prodArr))
+  }
+</script>
+
+<!-- slider top script -->
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+<script src="/Edited/home-proj-sathan-hari/navbar.js"></script>
+<script src="/Amar/product Page/search bar.js"></script>
+<script src="/Amar/objects/siteObjects.js"></script>
+
+<script>
+  let topcontainer = document.getElementById("landingTop");
+  topcontainer.onclick = () => {
+    window.location.href = "/Kitchen  _Category/kitchen.html";
+  };
+</script>
+
+

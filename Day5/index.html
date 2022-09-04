@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+  font-size: 80px;
+margin-left: 1000px;
+margin-top: -400px;
+color: blue;
+        }
+         img{
+            width: 50%;
+            height: auto;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="type">
+<option value="">SELECT</option>
+ <option value="burger">burger</option>
+<option value="frenchfires">frenchfires</option>
+ <option value="Nuggets">Nuggets</option>
+<option value="grilled">Grilled Chicken Deluxe</option>
+<option value="wrap">wrap</option>
+ <option value="snacks">Snack Wrap</option>
+    </select>
+    <button onclick="orderFood()">Order Food</button>
+
+    <div id="container"></div>
+</body>
+</html>
+<script>
+ function get(id){
+        return document.getElementById(id).value;
+    }
+    function orderFood(){
+         let item=get('type')
+        let status="open"
+        let itemPromise= new Promise(function(resolve,reject){
+            let time=Math.random()*3000
+            if(status=="closed"){
+                reject("McDonald's Closed")
+            }
+            else{
+                setTimeout(function(){
+                    resolve(item)
+                },time)
+            }
+        })
+        itemPromise.then(function(resolve){
+           if(item=="burger"){
+                var img = document.createElement("img")
+                img.src="https://wallpapercave.com/dwp1x/wp1987065.jpg"
+
+
+                var id=document.createElement("h1")
+                id.innerText="9"
+                container.append(img,id)
+
+               }
+
+               else if(item=="frenchfires"){
+
+                var img = document.createElement("img") 
+                img.src="https://wallpapercave.com/dwp1x/wp2148248.jpg"
+                
+                var id=document.createElement("h1")
+                id.innerText="10"
+                container.append(img,id)
+               }
+
+               else if(item=="Nuggets"){
+                var img = document.createElement("img")
+                img.src="https://wallpaperaccess.com/full/2037684.jpg"
+
+                var id=document.createElement("h1")
+                id.innerText="12"
+                container.append(img,id)      
+               }
+
+               else if(item=="grilled"){
+                var img = document.createElement("img")
+                img.src="https://wallpapercave.com/wp/wp8327487.jpg"
+
+                var id=document.createElement("h1")
+                id.innerText="15"
+                container.append(img,id)  
+              }
+
+               else if(item=="wrap"){
+                var img = document.createElement("img")
+               img.src="https://wallpapercave.com/wp/wp7314674.jpg"
+
+                var id=document.createElement("h1")
+                id.innerText="17"
+                container.append(img,id)  
+              }
+               else if(item=="snacks"){
+                var img = document.createElement("img")
+                img.src="https://wallpapercave.com/wp/wp2097597.jpg"
+
+                var id=document.createElement("h1")
+                id.innerText="19"
+                container.append(img,id)               }
+               
+      
+        })
+    }
+
+</script>

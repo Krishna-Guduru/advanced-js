@@ -1,0 +1,179 @@
+<!-- youtube -->
+<!-- https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=kgf2&key=[ AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M]  -->
+<!-- AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M -->
+<!-- AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M -->
+<!-- https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key -->
+<!-- https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${q}%2028&key=AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M -->
+<!-- Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #main{
+    width: 98%;
+    margin: auto;
+
+display: flex;
+flex-wrap: wrap;
+}
+#form{
+width:500px;
+height:50px;
+margin-left: 10%;
+padding: 0px 5px 0px 5px;
+}
+#icon{
+
+height:40px;
+width: 50px;
+font-size: 15px;
+padding: 1px;
+}
+#btn{
+margin-left: -8px;
+}
+#container{
+display: grid;
+grid-template-columns: 13% 80%;
+
+width: 97%;
+}
+#krishna{
+display: grid;
+grid-template-columns: repeat(3,25%);
+gap: 12px;
+justify-content: space-around;
+margin-top: 5%;
+
+} 
+
+#disbox{
+    display: flex;
+     height: 500px;
+     width: 97%;
+     margin: auto;
+}
+#mainVedio{
+    flex:3;
+}
+#recormended{
+    flex:1;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+ 
+        <i style="font-size:35px" class="fa">&#xf0c9;</i>
+<img   src="https://static.vecteezy.com/system/resources/thumbnails/003/206/623/small/youtube-editorial-app-icon-free-vector.jpg" width="10%" alt="">
+    
+    <input id="form" type="search"  class="fa fa-search"   />
+    <button id="btn" onclick="getData()">
+        <i id="icon" class="fa fa-search" style="font-size:28px"></i>
+    search</button>
+ <img style="margin-left: 150px"
+ src="https://banner2.cleanpng.com/20190826/kih/transparent-bell-icon-basic-icons-icon-notification-icon-5d63b4e3597582.2214950915668154593664.jpg" width="2.5%" alt="">
+</div>
+<br>
+<div id="container">
+    <div>
+
+    </div>
+    <div id="krishna">
+
+    </div>
+
+</div>
+
+<script>
+    let div1 = document.getElementById("krishna")
+
+
+search()
+async function search() {
+    let input = document.getElementById("form").value;
+    let url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=IN&key=AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M&maxResults=30`
+    let res = await fetch(url)
+    let data = await res.json();
+    console.log(data)
+    let videos = data.items
+     appendVideos(videos)
+}
+let appendVideos = (x) => {
+    x.forEach(({ snippet, id: { videoId } }) => {
+
+        let div = document.createElement("div")
+        let url = snippet.thumbnails.medium.url
+
+        let img1 = document.createElement("img")
+        img1.src = url
+
+        let p = document.createElement("p")
+        p.innerText = snippet.title
+
+        let video_data = {
+            snippet,
+            videoId,
+        }
+
+        div1.onclick = () => {
+            showVedio(video_data)
+
+        }
+
+
+        div.append(img1, p)
+        div1.append(div)
+    });
+}
+
+let showVedio = (video_data) => {
+    localStorage.setItem("vedios", JSON.stringify(video_data))
+    window.location.href = "showVedios.html"
+}
+
+let API_key = "AIzaSyDUGCH1X4PckDaeM0Z8Q2dP4oTFIO1866M"
+async function getData() {
+    div1.innerHTML = ""
+    let input = document.getElementById("form").value;
+    let url = `https://youtube.googleapis.com/youtube/v3/search?q=${input}&key=${API_key}&type=video&part=snippet&maxResults=30`
+    let res = await fetch(url)
+    let data = await res.json();
+    console.log(data)
+    let videos = data.items
+    searchvedio(videos)
+}
+let  searchvedio = (x) => {
+    div1.innerText = ""
+    x.forEach(({ snippet, id: { videoId } }) => {
+
+        let div = document.createElement("div")
+        let url = snippet.thumbnails.medium.url
+
+        let img1 = document.createElement("img")
+        img1.src = url
+
+        let p = document.createElement("p")
+        p.innerText = snippet.title
+
+        let video_data = {
+            snippet,
+            videoId,
+        }
+        div1.onclick = () => {
+            showVideo(video_data)
+        }
+        div.append(img1, p)
+        div1.append(div)
+    });
+}
+let showVideo = (video_data) => {
+    localStorage.setItem("vedios", JSON.stringify(video_data))
+    window.location.href = "Vedio.html"
+}
+</script>

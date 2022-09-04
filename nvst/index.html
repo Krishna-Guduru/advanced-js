@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="vice-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #container{
+width: 95%;
+height: 600px;
+margin: auto;
+    }
+    #parent{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        border: 1px solid tamato;
+
+    }
+    #child1{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #child1>div>h3{
+color: #464B4E;;
+    }
+
+    #child2{
+        border: 1px solid blue;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    #child1>div>h3{
+color: #464B4E;;
+    }
+    #child3{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #child1>div>h3{
+color: #464B4E;;
+    }
+    #parent1{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+
+    }
+    #parent1>div>img{
+        width: 100%;
+    }
+
+    #parent2{
+            display:flex;
+            justify-content: center;
+            width: 100%;
+            height: 80px;
+            margin-top: 200px;    
+            }
+            #parent2>div{
+                width: 20%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                
+            }
+            div>button{
+                text-decoration: none;
+                background-color: white;
+                border: none;
+                font-size:30px;
+                display: inline-block;
+             position: relative;
+             color: #464B4E;
+            }
+            button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+button:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="parent">
+        <div id="child1">
+            <div> 
+<img src="Vector (2).png" alt="#">
+
+            </div>
+            <div><h3>EALERS</h3></div>
+        </div>
+        <div id="child2">
+            <div>
+                <img src="Vector (3).png" alt="">
+            </div>
+            <div><h3>SMOKE</h3></div>
+        </div>
+        <div id="child3">
+            <div>
+                <img src="Vector (4).png" alt="">
+            </div>
+            <div><h3>BRANDS</h3></div>
+        </div>
+    </div>
+    <div id="parent1">
+        <div> <img src="Orange and White Modern Simple Technology YouTube Thumbnail 3.png" alt=""></div>
+        <div> <img src="Orange and White Modern Simple Technology YouTube Thumbnail 2.png" alt=""></div>
+        <div> <img src="Orange and White Modern Simple Technology YouTube Thumbnail 1.png" alt=""></div>
+
+    </div>
+    <div id="parent2">
+
+    <div> <img src="Vector (6).png" alt=""><button>All</button></div>
+    <div><img src="Vector (6).png" alt=""><button>Menu 1</button></div>
+    <div><img src="Vector (6).png" alt=""><button>Menu 2</button></div>
+    <div><img src="Vector (6).png" alt=""><button>Menu 3</button></div>
+    <div><img src="Vector (6).png" alt=""><button>Menu 4</button></div>
+
+    </div>
+
+    </div>
+  
+</body>
+</html>

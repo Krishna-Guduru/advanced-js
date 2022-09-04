@@ -1,0 +1,710 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+   
+
+
+
+      /* Limited-Time Deals */
+
+#heading1 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2f3337;
+    text-align: center;
+    font-family: ‘Montserrat’, sans-serif;
+}
+
+#fresh{
+  
+    width: 100%;
+    font-family: ‘Montserrat’, sans-serif;
+}
+#fresh img{
+    width: 80%;
+ 
+    font-family: ‘Montserrat’, sans-serif;
+}
+
+#timemain {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    justify-content: space-around;
+    font-family: ‘Montserrat’, sans-serif;
+}
+
+#timemain>div {
+    border: 1px;
+    /* width: 200px; */
+    background-color: #f9f9f9;
+    font-family: ‘Montserrat’, sans-serif;
+}
+/* #timemain>div:nth-child(1){
+    animation: 3s div1 linear;
+}
+#timemain>div:nth-child(2){
+    animation: 4s div1 linear;
+}
+#timemain>div:nth-child(3){
+    animation: 5s div1 linear;
+} */
+
+#timemain>div:hover{
+    animation: 1s div1 linear;
+    /* animation-iteration-count: 2; */
+}
+@keyframes div1{
+    0%{
+        transform: rotateY(45deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+#timemain img {
+    height: 200px;
+    /* width: 200px; */
+  
+    width: 100%;
+    
+}
+
+#timemain h4 {
+    font-family: ‘Montserrat’, sans-serif;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2f3337;
+    text-align: center;
+}
+    /* medium */
+@media only screen and (min-width: 421px) and (max-width: 720px){
+    #timemain {
+        display: grid;
+        grid-template-columns: repeat(3,31%);
+        gap: 6%;
+        height: auto;
+      }  
+      #timemain>div {
+        border: 1px;
+        width: auto;
+        background-color: #f9f9f9;
+        padding: 0px 10px;
+    }
+    #timemain img {
+        height: auto;
+        width: 100%;
+    }
+    
+}
+           /* small */
+
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    #timemain {
+        display:grid;
+        grid-template-columns: repeat(2,47%);
+        gap: 6%;
+        height: auto;
+      }  
+      #timemain>div {
+        border: 1px;
+        width: auto;
+        background-color: #f9f9f9;
+        padding: 0px 10px;
+    }
+    #timemain img {
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
+/* homedec */
+
+#homedec {
+    /* height: 720px; */
+    width: 100%;
+    /* background-image: url('https://media.istockphoto.com/photos/home-interior-with-ethnic-boho-decoration-living-room-in-brown-warm-picture-id1212833920?k=20&m=1212833920&s=612x612&w=0&h=NqHR6wtR_qGPC7ezXMdADEflfW9evXmBKB17Ssu0_gg='); */
+    margin-top: 70px;
+}
+#homedec video{
+    /* height: 100%; */
+    width: 100%;
+}
+
+    /* medium */
+    @media only screen and (min-width: 421px) and (max-width: 720px){
+        #homedec {
+            margin-top: 150px;
+            width: auto;
+            /* background-image: url('https://media.istockphoto.com/photos/home-interior-with-ethnic-boho-decoration-living-room-in-brown-warm-picture-id1212833920?k=20&m=1212833920&s=612x612&w=0&h=NqHR6wtR_qGPC7ezXMdADEflfW9evXmBKB17Ssu0_gg='); */
+            height: auto;
+        }
+        #homedec img{
+            width: 100%;
+        }
+    }
+              /* small */
+    @media only screen and (min-width: 70px) and (max-width: 420px){
+        #homedec {
+            margin-top: 150px;
+            width: auto;
+            /* background-image: url('https://media.istockphoto.com/photos/home-interior-with-ethnic-boho-decoration-living-room-in-brown-warm-picture-id1212833920?k=20&m=1212833920&s=612x612&w=0&h=NqHR6wtR_qGPC7ezXMdADEflfW9evXmBKB17Ssu0_gg='); */
+            height: auto;
+        }
+        #homedec img{
+            width: 100%;
+        }
+    }
+
+/* Fresh Finds In Each Category  */
+
+#heading2 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2f3337;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#fresh {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* #fresh>div {
+    border: 1px;
+    width: 200px;
+
+} */
+
+/* #fresh img {
+
+    width: 200px;
+} */
+
+#fresh p {
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #545658;
+    text-align: center;
+}
+
+ /* medium */
+ @media only screen and (min-width: 421px) and (max-width: 720px){
+    #fresh {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        gap: 6%;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #fresh>div {
+        border: 1px;
+        width: auto;
+    
+    }
+    
+    #fresh img {
+        width: 100%;
+    }
+ }
+
+         /* small */
+ @media only screen and (min-width: 70px) and (max-width: 420px){
+    #fresh {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #fresh>div {
+        border: 1px;
+        width: auto;
+    
+    }
+    
+    #fresh img {
+        width: 100%;
+    }
+ }
+
+/* New Ways to Bring Home Spring */
+
+#heading3 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2f3337;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+#Newway {
+    display: flex;
+    border: 1px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#Newway>div {
+    border: 1px;
+    width: 24%;
+    background-color: #f5f5f5;
+}
+
+#Newway img {
+    width: 100%;
+
+}
+
+#Newway h3 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2f3337;
+    text-align: center;
+}
+
+#Newway p {
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2f3337;
+    text-align: center;
+}
+
+/* medium */
+@media only screen and (min-width: 421px) and (max-width: 720px){
+    #heading3 {
+        font-style: normal;
+        font-weight: 700px;
+        font-size: 32px;
+        line-height: 38px;
+        color: #2f3337;
+        text-align: center;
+        margin-top: 750px;
+    
+    }
+   
+    #Newway {
+        display:grid;
+        grid-template-columns: repeat(2,45%);
+        gap: 6%;
+        margin-top: 70px;
+        width: auto;
+    }
+    #Newway>div {
+        border: 1px;
+        width: auto;
+        background-color: #f5f5f5;
+    }
+}
+
+       /* small */
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    #heading3 {
+        font-style: normal;
+        font-weight: 700px;
+        font-size: 32px;
+        line-height: 38px;
+        color: #2f3337;
+        text-align: center;
+        /* margin-top: -250px; */
+    
+    }
+   
+    #Newway {
+        display:grid;
+        grid-template-columns: repeat(2,45%);
+        gap: 6%;
+        margin-top: 70px;
+        width: auto;
+    }
+    #Newway>div {
+        border: 1px;
+        width: auto;
+        background-color: #f5f5f5;
+    }
+}
+
+/* spring */
+
+#spring {
+    height: 500px;
+    width: 100%;
+    background-image: url('https://media.istockphoto.com/photos/nothing-better-than-sliding-into-bed-picture-id1158371712?k=20&m=1158371712&s=612x612&w=0&h=na_lxT8stGOrSewMEN7Di3Fs7TuDAwZG90lZs1I7eGc=');
+    margin-top: 70px;
+}
+
+  /* medium */
+@media only screen and (min-width: 421px) and (max-width: 720px){
+     
+    #spring {
+        height: auto;
+        width: auto;
+    }
+    #spring img{
+        width: 100%;
+    }
+
+}
+
+       /* small */
+@media only screen and (min-width: 70px) and (max-width: 420px){
+     
+    #spring {
+        height: auto;
+        width: auto;
+    }
+    #spring img{
+        width: 100%;
+    }
+
+}
+
+/* Overstock Featured Brands */
+
+#heading4 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2f3337;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+#overstock {
+    display: flex;
+    border: 1px;
+    width: 100%;
+    height: 420px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#overstock>div {
+    border: 1px;
+    width: 24%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+#overstock img {
+    width: 100%;
+
+}
+
+#overstock h5 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2f3337;
+    text-align: center;
+}
+
+#overstock p {
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2f3337;
+    text-align: center;
+}
+
+#clubRewards {
+    margin-top: 70px;
+
+}
+#clubRewards img{
+    width: 100%;
+}
+
+  /* medium */
+  @media only screen and (min-width: 421px) and (max-width: 720px){
+
+
+    #overstock {
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        gap: 6%;
+        width: auto;
+        height: auto;
+    }
+    #overstock>div {
+        border: 1px;
+        width: auto;
+        height: auto;
+        background-color: #f5f5f5;
+    }
+    #clubRewards img{
+
+        width: 100%;
+    }
+  }
+
+
+  @media only screen and (min-width: 70px) and (max-width: 420px){
+
+
+    #overstock {
+        display: block;
+        /* grid-template-columns: repeat(2,45%); */
+        /* gap: 6%; */
+        width: auto;
+        height: auto;
+    }
+    #overstock>div {
+        border: 1px;
+        width: auto;
+        height: auto;
+        background-color: #f5f5f5;
+    }
+    #clubRewards img{
+
+        width: 100%;
+    }
+  }
+
+
+
+/* Trending Searches */
+
+#trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0px 10px;
+    padding-bottom: 30px ;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c8ca;
+}
+
+#heading5 {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #2f3337;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#trending>div {
+    border: 1px;
+    text-align: center;
+    /* padding: 10px 0px; */
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #545658;
+    background-color: #f5f6f7;
+}
+      /* medium */
+@media only screen and (min-width: 421px) and (max-width: 720px){
+
+    #trending>div {
+        border: 1px;
+        text-align: center;
+        /* padding: 10px 0px; */
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 15px;
+        line-height: 16px;
+        color: #545658;
+        background-color: #f5f6f7;
+    }
+
+}
+           /* small */
+@media only screen and (min-width: 70px) and (max-width: 420px){
+
+    #trending>div {
+        border: 1px;
+        text-align: center;
+        /* padding: 10px 0px; */
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 12px;
+        line-height: 13px;
+        color: #545658;
+        background-color: #f5f6f7;
+    }
+
+}
+
+
+/* coupen */
+
+#coupen {
+    display: flex;
+    gap: 25px;
+    margin-left: 200px;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+#chairlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(187, 184, 184);
+    padding-right: 20px;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #topText {
+    color: #2f3337;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+#coupen h2 {
+    margin-top: -10px;
+    text-align: center;
+    color: #c8332d;
+}
+
+#small {
+    font-size: x-small;
+    margin-top: -10px;
+    text-align: center;
+    color: #2f3337;
+}
+
+#coupen input {
+    padding: 10px 40px 10px 40px;
+}
+
+#coupen button {
+    padding: 10px 40px 10px 40px;
+    background-color: #0372a2;
+    border: 2px solid #0372a2;
+    color: white;
+}
+     /* medium */
+@media only screen and (min-width: 421px) and (max-width: 720px){
+    #coupen {
+        display: flex;
+        gap: 25px;
+        padding: 20px 0px;
+        margin-top: 20px;
+        height: auto;
+        width: auto;
+    }
+    #chairlogo {
+        visibility: hidden;
+        /* align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgb(187, 184, 184);
+        padding-right: 20px; */
+    }
+    #secondDiv{
+        margin-left: -400px;
+    }
+    #coupen input {
+        padding: 5px 10px ;
+    }
+    #coupen button {
+        padding: 5px 10px;
+    }
+    body #topText {
+        font-weight: 300px;
+        font-size: 15px;
+    }
+    
+    #coupen h2 {
+        margin-top: -6px;
+        text-align: center;
+        color: #c8332d;
+    }
+    
+    #small {
+        font-size: xx-small;
+        margin-top: -6px;
+        text-align: center;
+        color: #2f3337;
+    }
+}
+
+     /* small */
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    #coupen {
+        display: block;
+        /* gap: 25px; */
+        padding: 20px 0px;
+        margin-top: 20px;
+        height: auto;
+        width: auto;
+    }
+    #chairlogo {
+        visibility: hidden;
+    }
+    #secondDiv{
+        margin-left: -200px;
+    }
+    #input{
+        margin-left: -200px;
+        margin-top: 50px;
+    }
+    #coupen input {
+        padding: 2px 5px ;
+    }
+    #coupen button {
+        padding: 2px 5px;
+    }
+    body #topText {
+        font-weight: 300px;
+        font-size: 15px;
+    }
+    
+    #coupen h2 {
+        margin-top: -6px;
+        text-align: center;
+        color: #c8332d;
+    }
+    
+    #small {
+        font-size: xx-small;
+        margin-top: -6px;
+        text-align: center;
+        color: #2f3337;
+    }
+}

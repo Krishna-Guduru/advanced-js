@@ -1,0 +1,78 @@
+#navbar{
+    height: 60px;
+    background-color: teal;
+    display: flex;
+    gap:50px;
+    /* text-align: center; */
+    justify-content: space-around;
+    border-radius:5px;
+}
+
+#search_input{
+
+    padding: 10px;
+    padding-right: 150px;
+    border-radius:30px;
+    margin-top:11px;
+}
+#holder {
+
+    border: 1px solid black;
+    display:flex;
+    justify-content:space-between;
+}
+#holder>#sidebar
+{
+    width: 15%;
+    height:auto;
+    background-color:teal;
+    color:white;
+    text-align: center;
+}
+#results>.news{
+
+    display:flex;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#results>.news>img{
+
+    width: 200px;
+    height: 150px;
+}
+
+#detailed_news>#sidebar
+{
+    width: 15%;
+    height:auto;
+    background-color:teal;
+    color:white;
+    text-align: center;
+}
+#detailed_news>.news{
+
+    display:flex;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#detailed_news>.news>img{
+
+    width: 200px;
+    height: 150px;
+}
+
+#detailed_news
+{
+    width: 80%;
+    height: 600px;
+    margin:auto;
+}
+#detailed_news>img{
+    width:100%;
+    height: auto;
+}
+#india ,#china ,#usa, #uk,#Newzeland{
+
+    cursor: pointer;
+    
+}

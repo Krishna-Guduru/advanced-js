@@ -1,0 +1,451 @@
+#sorting {
+    display: flex;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    height: 50px;
+    position: relative;
+    bottom: 900px;
+    left: 840px;
+    border-radius: 5px;
+    
+
+}
+
+#sorting>select {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#sorting>select>option {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#append_products {
+    display: grid;
+    width: 810px;
+    position: relative;
+    bottom: 865px;
+    left: 155px;
+    grid-template-columns: 250px 250px 250px;
+    gap: 20px;
+}
+
+#append_products>div {
+
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    height: auto;
+
+}
+
+
+
+#append_products>div>center>img {
+    width: 220px;
+    margin-top: 20px;
+
+}
+
+
+#append_products>div>h5 {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    height: 80px;
+    font-weight: bold;
+}
+
+#append_products>div>div {
+    
+    padding: 10px;
+    
+    
+}
+
+#append_products>div>p {
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+    height: 80px;
+    font-weight: normal;
+}
+
+#append_products>div>div>button {
+    
+    position: relative;
+    font-size: 12px;
+    bottom: 150px;
+    left: 150px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    
+    
+    
+}
+
+#append_products>div>div>button:hover {
+    
+    text-decoration: underline;
+    
+    
+}
+
+#sort_appenddiv{
+    
+    width: 800px;
+}
+
+#addtocart{
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+#review{
+    border-radius: 15px;
+    width: 50px;
+    font-size: 12px;
+    background: white;
+    position: relative;
+    bottom: 235px;
+    left: 170px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#addtowish{
+    padding: 5px;
+    border-radius: 10px;
+    width: 120px;
+    margin: 5px;
+   
+   
+    margin-top: -80px;
+    background: rgb(255, 255, 255);
+    border: 1px solid red;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 401px){
+
+    #sorting {
+        display: flex;
+        width: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+        height: 50px;
+        position: relative;
+        bottom: 900px;
+        left: 500px;
+        border-radius: 5px;
+        
+    
+    }
+    
+    #sorting>select {
+        border: none;
+        width: 200px;
+        padding-left: 10px;
+    }
+    
+    #sorting>select>option {
+        border: none;
+        width: 200px;
+        padding-left: 10px;
+    }
+    
+    #append_products {
+        display: grid;
+        width: 480px;
+        position: relative;
+        bottom: 865px;
+        left: 150px;
+        grid-template-columns: 225px 225px;
+        gap: 20px;
+        
+        
+    }
+    
+    #append_products>div {
+    
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        height: auto;
+    
+    }
+    
+    
+    
+    #append_products>div>center>img {
+        width: 160px;
+        margin-top: 20px;
+    
+    }
+    
+  
+    
+    #append_products>div>h5 {
+        font-size: 12px;
+        text-align: left;
+        padding: 10px;
+        height: 80px;
+        font-weight: bold;
+    }
+    
+    #append_products>div>div {
+        
+        padding: 10px;
+        
+        
+    }
+    
+    #append_products>div>p {
+        font-size: 11px;
+        text-align: left;
+        padding: 10px;
+        height: 80px;
+        font-weight: normal;
+    }
+    
+    #append_products>div>div>button {
+        
+        position: relative;
+        bottom: 150px;
+        left: 110px;
+        border: none;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 15px;
+        
+        
+        
+    }
+    
+    #append_products>div>div>button:hover {
+        
+        text-decoration: underline;
+        
+        
+    }
+    
+    #sort_appenddiv{
+        
+        width: 650px;
+    }
+    
+    body{
+        
+        width: 90%;
+    }
+
+    #addtocart{
+        padding: 5px;
+        border-radius: 10px;
+        width: 80px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: -80px;
+        background: red;
+        border: none;
+        color: white;
+        font-size: 10px;
+    }
+    
+    #review{
+        border-radius: 15px;
+        width: 50px;
+        font-size: 12px;
+        background: white;
+        position: relative;
+        bottom: 175px;
+        left: 130px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    #addtowish{
+        padding: 5px;
+        border-radius: 10px;
+        width: 100px;
+        margin: 5px;
+       
+       
+        margin-top: -80px;
+        background: rgb(255, 255, 255);
+        border: 1px solid red;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 400px) and (min-width: 40px){
+
+
+    #sorting {
+        display: flex;
+        width: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+        height: 30px;
+        margin:5px;
+        position: relative;
+        bottom: 1305px;
+        left: 180px;
+        border-radius: 5px;
+        
+    
+    }
+    
+    #sorting>select {
+        border: none;
+        width: 200px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+    
+    #sorting>select>option {
+        border: none;
+        width: 200px;
+        padding-left: 10px;
+    }
+    
+    #append_products {
+        display: grid;
+        width: 380px;
+        position: relative;
+        top: -1300px;
+        left: 0px;
+        grid-template-columns: 380px;
+        gap: 20px;
+        
+    }
+    
+    #append_products>div {
+    
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        height: auto;
+    
+    }
+    
+    
+    
+    #append_products>div>center>img {
+        width: 300px;
+        margin-top: 20px;
+    
+    }
+    
+ 
+    
+    #append_products>div>h5 {
+        font-size: 20px;
+        text-align: left;
+        padding: 10px;
+        height: 80px;
+        font-weight: bold;
+    }
+    
+    #append_products>div>div {
+        
+        padding: 10px;
+        
+        
+    }
+    
+    #append_products>div>p {
+        font-size: 15px;
+        text-align: left;
+        padding: 10px;
+        height: 80px;
+        font-weight: normal;
+    }
+    
+    #append_products>div>div>button {
+        
+        position: relative;
+        bottom: 150px;
+        left: 110px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        font-size: 20px;
+        
+        
+        
+    }
+    
+    #append_products>div>div>button:hover {
+        
+        text-decoration: underline;
+        
+        
+    }
+    
+    #sort_appenddiv{
+    
+        width: 380px;
+    }
+    
+    body{
+     
+        width: 100%;
+    }
+
+    
+    #addtocart{
+        padding: 5px;
+        border-radius: 10px;
+        width: 150px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: -80px;
+        background: red;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    #review{
+        border-radius: 15px;
+        width: 50px;
+        font-size: 12px;
+        background: white;
+        position: relative;
+        bottom: 310px;
+        left: 230px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    #addtowish{
+        padding: 5px;
+        border-radius: 10px;
+        width: 170px;
+        margin: 5px;
+       
+       
+        margin-top: -80px;
+        background: rgb(255, 255, 255);
+        border: 1px solid red;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div id="main">
+        <img src="https://air-marketing-assets.s3.amazonaws.com/blog/logo-db/overstock-Logo.png" alt="">
+        <div id="input">
+            <input type="text" placeholder="Search">
+            <div id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div id="icon">
+            <div onclick="openpop()">
+                <i class="fa-regular fa-user icon"></i>
+                <p class="acc">Account</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart icon"></i>
+                <p class="lis">List</p>
+            </div>
+            <div>
+                <!-- <div id="cartbox"></div> -->
+              <i class="fa-solid fa-cart-shopping icon"></i>
+              <p class="cart">Cart</p>
+            </div>
+            <!-- <p id="cartbox">0</p> -->
+        </div>
+    </div>
+
+    <!-- <div>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+        <h1>jkkgiksbvciyfvfv iyfvyikbvafykjdbI7SDJKSBDUFciclajb afG</h1>
+    </div> -->
+    
+    <div class="popup" id="popup">
+        <div id="closeBtn" onclick="closepop()"><i class="fa-solid fa-xmark"></i></div>
+        <div id="logSig">
+            <div id="login">
+                <p>Create Account</p>
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <textarea name="" id="" cols="20" rows="5" placeholder="Description"></textarea><br>
+                <input type="number" placeholder="Number"><br>
+                <input type="text" placeholder="Usernsme"><br>
+                <button>create Account</button>
+              </div>
+                <div id="signup">
+                    <p>Sign In</p>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="password" placeholder="Password"><br>
+                    <button>sign In</button>
+                    <small>Forgot your password?</small>
+                    <div id="google">
+                        <img src="G.png">
+                        <p>Continue with Google</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
+<script>
+     let body = document.getElementById("body")
+    let pop = document.getElementById("popup");
+    function openpop(){
+     pop.classList.add("openPop")
+     body.style.backgroundColor = "whitesmoke"
+    }
+    function closepop(){
+        pop.classList.remove("openPop") 
+        body.style.backgroundColor =null;
+    }
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+  let arr1 = new Array("k", "r", "i");
+let box =[];
+
+  function first() {
+    Object.defineProperty(this, "length", {
+      value: 0,
+      writable: true,
+      enumerable: false, 
+    });
+
+    for (let i = 0; i < arguments.length; i++) {
+      this[i] = arguments[i];
+    }
+    this.length = arguments.length;
+  }
+  first.prototype.push= function (value) {
+    let index = this.length;
+    this[index] = value;
+
+    this.length++;
+  };
+
+  first.prototype.pop = function () {
+    let index = this.length - 1;
+
+    delete this[index];
+
+    this.length--;
+  };
+  let arr = new first("k", "r", "i");
+  arr.push("s");
+  arr.push("h");
+  arr.pop();
+    box.push(arr)
+   console.log("arr:", Object.values(arr));
+   console.log(box);
+var bag=""
+var x=Number(box)
+ for(var i=0;i<box.length;i++){
+    console.log("Number(box):",box)
+
+ }
+ var k=[box.length-1]
+ var bag=""
+ for(var i=k;i>=0;i--){
+bag=bag+k[i]+" "
+    console.log("Number(k[i]):",k[i])
+console.log(bag)
+ }
+
+</script>

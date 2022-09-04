@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #movie{
+            margin: auto;
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        #container{
+            height:auto;
+            margin:auto;
+            text-align: center;
+        }
+        #child1{
+width: 50%;
+height: 100%;
+margin: auto;
+        }
+        #child2{
+width: 50%;
+height: 100%;
+        }
+        #movie1{
+         text-align: center;
+            width: 20%;
+            height: 25px;
+            border: 0;   
+            margin: auto;
+             }
+            
+        #btn{
+            width: 100px;
+            height: 26px;
+            border: 0;
+            font-size: 17px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+        }
+        #img1{
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="movie">
+        <input type="search" id="movie1" placeholder="Enter Movie Name"/>
+        <button id="btn" value="Search" onclick="getData()">Search</button>
+    
+    <div id="container">
+<div id="child1"></div>
+<div id="child2"> </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    async function getData(){
+        try{
+            let movie1=document.getElementById("movie1").value
+            let res=await fetch(`https://www.omdbapi.com/?t=${movie1}&apikey=682bc038`)
+            let data =await res.json();
+ console.log(data)
+appendData(data)
+        }
+        catch(err){
+            
+        document.querySelector("#container").innerHTML=null;
+        let box1=document.createElement("div")
+        let img=document.createElement("img")
+        img.src="https://wallpaperaccess.com/full/1750657.jpg"
+        img.setAttribute("id","img1")
+        box1.append(img)
+            document.querySelector("#container").append(box1);
+console.log(err)
+        }
+    }
+    function appendData(data){
+        // document.querySelector("#container").innerHTML=null
+        let container=document.getElementById("container")
+        let box=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=data.Poster
+        let title=document.createElement("h3")
+        title.innerText=data.Title
+        // console.log(title)
+        let year=document.createElement("p")
+        year.innerText=data.Year
+        let date=document.createElement("p")
+        date.innerText=data.Released
+let rating=document.createElement("p")
+rating.innerText=data.Ratings[0].value
+console.log(rating)
+// let im=document.createElement
+let imbd=document.createElement("h4")
+imbd.innerText=data.imdbRating
+if (Number(data.imdbRating>7.5)){
+    let h1=document.createElement("h1")
+    h1.innerText="Recomended"
+    box.append(image,title,year,date,rating,imbd,h1)
+    container.append(box)
+
+}
+else{
+box.append(image,title,year,date,rating,imbd)
+container.append(box)
+}
+    }
+</script>

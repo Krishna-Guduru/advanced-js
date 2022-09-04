@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./productpage.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../Product Page/slider.css" />
+    <link rel="stylesheet" href="../dist/drift-basic.min.css" />
+    <link rel="stylesheet" href="../nav bar and footer/navbar/navbar.css" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0"
+      nonce="ibb5HScd"
+    ></script>
+
+    <header>
+      <section id="topbar">
+        <div>
+          <label>
+            <input type="checkbox" id="toggler" /> Dark/Light Mode
+          </label>
+        </div>
+
+        <div>
+          <img src="https://bit.ly/3Fwopqw" alt="" />
+        </div>
+
+        <div id="productcartdetails">
+          <div class="tocartpage">
+            <i class="fa-solid fa-heart" id="showWish"></i>
+            <p id="h2"></p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-cart-shopping" id="showCart"></i>
+            <p id="h1"></p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section id="cartParent">
+      <div id="cartContainer">
+        <div id="top">
+          <h4 class="tocartpage">Your cart 🛒</h4>
+          <h5 id="esc">esc</h5>
+        </div>
+        <div id="middle">
+          <h4>Item</h4>
+          <h4>Quantity</h4>
+          <h4>Price</h4>
+          <h4>Remove</h4>
+        </div>
+        <div id="below">
+          <!-- Append the side cart -->
+        </div>
+        <div id="payment"></div>
+      </div>
+    </section>
+
+    <section data-theme="default" class="mode" id="tcParent">
+      <section id="topContainer">
+        <section id="leftTC">
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper2"
+            id="gallerySwipper"
+          >
+            <div class="swiper-wrapper" id="firstWrapper"></div>
+
+            <div class="swiper-button-next" id="sbn"></div>
+            <div class="swiper-button-prev" id="sbp"></div>
+          </div>
+
+          <div thumbsSlider="" class="swiper mySwiper" id="thumSlider">
+            <div class="swiper-wrapper" id="secondWrapper"></div>
+          </div>
+        </section>
+
+        <section id="details"></section>
+        <div id="display"></div>
+      </section>
+    </section>
+
+    <!-- Top Reviews section -->
+    <section data-theme="default" class="mode">
+      <section id="topReviews">
+        <h4>What online buyers are saying</h4>
+        <div id="reviewsContainer"></div>
+      </section>
+    </section>
+
+    <!-- Other information about the product -->
+    <section data-theme="default" class="mode">
+      <section id="information">
+        <div id="infoHeader">
+          <div id="one">Product Details</div>
+          <div id="two">Ratings</div>
+          <div id="three">Reviews</div>
+        </div>
+        <div id="infoContainer">
+          <!-- all texts -->
+        </div>
+      </section>
+
+      <!-- MORE REVIEWS SECTION -->
+      <section id="moreRwSection">
+        <div id="rwContainer">
+          <div id="moreRwDiv">
+            <div class="swiper mySwiper" id="swiper_1">
+              <div class="swiper-wrapper swipper-wrapper-1">
+                <!-- review slider appended -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section data-theme="default" class="mode">
+      <section id="featured" class="feat_recomm">
+        <h2>Featured Products</h2>
+        <div class="swiper mySwiper" id="swiper_3">
+          <div class="swiper-wrapper swipper-wrapper-3">
+            <!-- featured slider appended -->
+          </div>
+        </div>
+        <div class="swiper-button-next sbn_3"></div>
+        <div class="swiper-button-prev sbp_3"></div>
+        <div class="swiper-pagination sp_3"></div>
+      </section>
+    </section>
+
+    <section data-theme="default" class="mode">
+      <!-- RECOMMENDED PRODUCTS -->
+      <section id="recommendation">
+        <h2>Recommended Products</h2>
+        <div class="swiper mySwiper" id="swiper_2">
+          <div class="swiper-wrapper swipper-wrapper-2">
+            <!-- recommended slider appended -->
+          </div>
+        </div>
+        <div class="swiper-button-next sbn_2"></div>
+        <div class="swiper-button-prev sbp_2"></div>
+        <div class="swiper-pagination sp_2"></div>
+      </section>
+    </section>
+
+    <section id="footer"></section>
+  </body>
+</html>
+<script src="../Product Page/slider.js" type="module"></script>
+<script src="./productpage.js" type="module"></script>
+<script src="../Product Page/index.js" type="module"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  let swwwiperrr = new Swiper("#thumSlider", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  let swwwiperrr2 = new Swiper("#gallerySwipper", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: "#sbn",
+      prevEl: "#sbp",
+    },
+    thumbs: {
+      swiper: swwwiperrr,
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+<script>
+  let swiperr = new Swiper("#swiper_1", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true,
+    },
+    // loop: true
+  });
+</script>
+
+<script>
+  let swiper = new Swiper("#swiper_2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".sp_2",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".sbn_2",
+      prevEl: ".sbp_2",
+    },
+  });
+</script>
+
+<script>
+  let swwiper = new Swiper("#swiper_3", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".sp_3",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".sbn_3",
+      prevEl: ".sbp_3",
+    },
+  });
+</script>
+
+<script src="../Product Page/navbar.js" type="module"></script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="food">
+        <option value="fries">Fries</option>
+        <option value="burger">burger</option>
+        <option value="coke">coke</option>
+        <option value="vadapav">vadapav</option>
+
+
+    </select>
+    <button id="order" onclick="oderFood()">Order</button>
+</body>
+</html>
+<script>
+//     var exam=true
+//     let myprom=new Promise (function (resolve,reject){
+//         if (exam){
+// resolve("bike")
+//         }
+//         else{
+//             reject("cycle")
+//         }
+//     });
+//     myprom.then(function(resolve){
+//         console.log("response",resolve)
+//     })
+//     myprom.then(function(err){
+//         console.log(err)
+//     })
+function oderFood(){
+    var food=document.getElementById("food").value
+    // console.log(food)
+    let time=Math.random()*10000
+    let status="open"
+    let foodpromise=new Promise(function(resolve,reject){
+        if(status=="close"){
+            reject("shop is closed")
+        }
+        else{
+    setTimeout(function(){
+        if(status==="open"){
+resolve(food)
+        }
+       
+    },time)
+}
+    
+    });
+foodpromise.then(function(res){
+console.log(res)
+})
+foodpromise.catch(function(err){
+    console.log(err)
+})
+    }
+
+
+
+</script>

@@ -1,0 +1,189 @@
+body{
+    font-family:sans-serif ;
+}
+#main{
+    border: 1px solid rgb(199, 196, 196);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    margin: auto;
+}
+#main>img{
+    width: 170px;
+    height: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#input{
+    margin-left: 30px;
+    display: flex;
+}
+#input>input{
+    width: 700px;
+    height: 35px;
+    border: 0.5px solid rgb(199, 196, 196);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 250);
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 12px;
+}
+#search{
+    border: 0.5px ;
+    display: flex;
+    height: 35px;
+    width: 40px;
+    background-color: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+#icon{
+    display: flex;
+    /* border: 1px solid; */
+    width: 400px;
+    height: 70px;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.icon{
+    margin-top: 25px;
+    font-size: 25px;
+    color: #2f3337;
+    cursor: pointer;
+}
+
+.acc{
+    margin-top: -0.3px;  
+    margin-left: -10px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+}
+.lis{
+    margin-top: -0.3px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.cart{
+    margin-top: -0.3px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+
+
+       /* popup */
+
+ #logSig{
+  display: flex;
+  justify-content: space-evenly;
+ }  
+ #logSig>div{
+     /* border: 1px solid; */
+     width: 40%;
+ }  
+ #logSig p{
+     font-style: none;
+     font-weight: 400px;
+     font-size: 18px;
+    line-height: 20px;
+ } 
+ #logSig input{
+     border: 0.5px solid rgb(146, 146, 146);
+    margin-top: 5%;
+    height: 10%;
+    width: 99%;
+    padding-left: 7px;
+    box-sizing: border-box;
+ } 
+ #logSig textarea{
+    margin-top: 5%;
+ }
+ #logSig input:focus{
+   background-color: rgb(232, 248, 243);
+ }
+ #logSig button{
+    margin-top: 5%;
+    height: 10%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #252525;
+    color: white;
+ } 
+  small{
+     text-decoration: underline;
+     margin-left: 25%;
+ }
+
+.popup{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    width: 60%;
+    height: 520px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+}
+.openPop{
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%,-50%) scale(1);
+}
+#closeBtn{
+    margin-left: 97%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+#closeBtn i{
+    font-size: x-large;
+    color: rgb(68, 67, 67);
+}
+#google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    justify-content: space-around;
+    margin-left: 25%;
+    border: 0.3px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    padding: 3px;
+    width: 60%;
+    cursor: pointer;
+}
+#google img{
+    height: 30px;
+    width: 30px;
+    
+}
+#google p{
+    font-size: small;
+}

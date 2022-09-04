@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+        var s="abcdeabcde"
+        var str=s.split("")
+        // console.log(s)
+        var sum = 0;
+        for (var i = 0; i <str.length; i++)
+        {
+            for (j = 0; j < i; j++)
+            {
+                if (str[i] == str[j])
+                {
+                    break;
+                }
+            }         
+           if(j==i)
+            {
+                str[sum]=str[sum]+str[i];
+            }
+        }
+        console.log (str.join("").slice(str, index));
+
+
+
+// myfunction()
+// What is a Promise?
+
+// Promises are the foundation of JavaScript asynchronous programming. A promise is an object which is returned by an asynchronous function that represents the current state of a function
+// Ex: 
+
+let passexam=true;
+let passexam1=true
+let myPromise=new Promise(function(res,rej){
+if(passexam==passexam1){
+res("passed the exam");
+}
+else{
+rej("did not pass the exam")
+}
+})
+myPromise.then(function(resolve){
+console.log("krishna",resolve)
+})
+myPromise.catch(function(err){
+console.log("did not pass",err)
+})
+
+// Map:The map function creates a new array by calling the callback function passed as an argument in the input array.
+// Ex:
+        var num=[1,2,3,4,5]
+var output=num.map((elm,index)=>elm=elm+1)
+console.log(output)
+
+Ouput=[2,3,4,5,6]
+
+
+// Filter: The filter method creates a new array that passes the test provided by the call-back functions.
+        var num=[1,2,3,4,5]
+var output=num.filter(myfunction)
+function myfunction(value,index,array){
+if(value>1){
+return value
+}
+console.log(output)
+ output=[2,3,4,5]
+}
+
+// Reduce: The Reduce method creates a new array that passes the test provided by the call-back functions.
+        var num=[1,2,3,4,5]
+var output=num.reduce(function(acc,cv,value){
+return acc+cv
+},0)
+console.log(output)
+Output=15
+
+
+// What is Javascript?
+// JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. JavaScript works with HTML and CSS to build web apps or web pages.
+// Ex:
+var x=10
+console.log(x)
+setTimeout(()=>{console.log("murali")
+},1000)
+var j=15
+console.log(j)
+
+// Output:
+// 10
+// 15
+// Murali
+// Explanation: In JavaScript, the variables are assigned a value and it is passed to the call stack,
+//  if the value is called it will be moved out off the call stack and printed in the console.
+//   For set Timeout, the function enters into the event loop and enters into the queue stack. 
+//   The function waits for it to print in the that time the JavaScript compliers moves to the next step
+//    and prints the next variable .All the vairables are completed then the call stack is empty the value 
+//    at the queue stack push it to callstack and the call stack push the data and data is printed in the console
+
+
+// Callback Functions? 
+// It is a function passed as an argument to another function. This function is invoked inside the outer function to complete an action. Let's take a simple example of how to use a callback. function
+function callbackfunction(name) {
+  console.log("Hello " + name);
+}
+function outerFunction(callback) {
+  let name = prompt("Please enter your name.");
+  callback(name);
+}
+outerFunction(callbackfunction);
+ 
+// Strict Mode?
+//  IT is a new feature in ECMAScript 5 that allows you to place a program, 
+// or a function, in a “strict” operating context. This way it prevents certain 
+// actions from being taken and throws more exceptions. The literal expression "use strict";
+//  instructs the browser to use the JavaScript code in the Strict mode.
+// Non-Strict Mode:  The code won’t execute in strict mode
+
+// Give examples for different iteration methods when it comes to looping objects in Js.
+
+// Forloop:
+for(var i=0;i<3;i++){
+console.log(i)
+}
+// Output=
+// 1
+// 2
+// 3
+
+// Whileloop:
+while(i < 3) {
+  text += " number is " + i;
+  i++;
+}
+// output:
+// number is 1
+// number is 2
+// number is 3
+
+
+//  do loop:
+let u=0
+do{
+ (console.log("number is " + u))
+  u++
+}
+while (u < 3)
+// output:
+// number is 0
+// number is 1
+// number is 2
+
+
+</script>

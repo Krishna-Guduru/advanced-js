@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>address_page</title>
+    <link rel="stylesheet" href="./address.css">
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body data-theme="default" class="mode">
+
+    <header>
+        <div>
+          <label for="toggler">
+            <input type="checkbox" id="toggler" />
+            <span>Dark/Light Mode</span>
+          </label>
+        </div>
+        <div id="logo">
+          <img src="https://bit.ly/3Fwopqw" alt="" />
+        </div>
+      </header>
+
+    <main data-theme="default" class="mode">
+
+    <div id="div_main" >
+        <div id="address_form">
+            <h3>Add New Address</h3>
+            <form id="form_input">
+                <input type="text" placeholder="Flat Number,Building Name,Street/Locality" 
+                    id="building_name" required></br></br>
+                <input type="text" placeholder="Landmark (optional)" name="" id="Landmark" required></br></br>
+                <input type="number" maxlength="6" id="pincode" placeholder="Pincode" required></br></br>
+                <input type="text" id="locality" placeholder="Locality" required></br></br>
+                <input type="text" id="city" placeholder="City" required></br></br>
+                <input type="text" id="state" placeholder="State" required></br></br>
+                <input type="text" id="name" placeholder="Customer Name" required></br></br>
+                <input type="number" id="mobile" maxlength="10" placeholder="10 Digit Mobile Number" required></br></br>
+                <div id="radio_btn">
+                    <input name="add" type="radio" checked><label for="">HOME</label>
+                    <input name="add" type="radio"><label for="">OFFICE</label>
+                    <input name="add" type="radio"><label for="">OTHER</label>
+                </div></br> 
+                <div id="btns">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+ 
+
+        
+            </form>
+        </div>
+        <div id="price_div">
+            <div><p id="total_price"> </p></div>
+            <div><center><button id="button">Pay Now</button></center></div>
+            
+        </div>
+
+    </div>
+</main>
+    <footer>
+        <div>
+            <div id="mainFoot">
+                <div>
+                    <h5>MY ACCOUNT</h5>
+                    <p>Orders & Returns</p>
+                    <p>Email Preferences</p>
+                    <p>Account Settings</p>
+                </div>
+                <div>
+                    <h5>LET US HELP</h5>
+                    <p>Contact Customer Care</p>
+                    <p>Shipping Information</p>
+                    <p>Return Policy</p>
+                    <p>International Help</p>
+                    <p>Accessibility</p>
+                </div>
+                <div>
+                    <h5>COMPANY INFORMATION</h5>
+                    <p>About Overstock™</p>
+                    <p>Contact Us</p>
+                    <p>Careers</p>
+                    <p>Investor Relations</p>
+                    <p>Sell Your Products</p>
+                    <p>Supply Chain Transparency</p>
+                </div>
+                <div>
+                    <h5>MORE WAYS TO SHOP</h5>
+                    <p>Tips & Ideas</p>
+                    <p>Deals</p>
+                    <p>Clearance</p>
+                    <p>New Arrivals</p>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="botLeft">
+                    <p>© Copyright 2022, Overstock.com®, Inc. <br>
+                         799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+                </div>
+                <div id="botRight">
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>*Promotion Terms</p>
+                    <p>Ship to: </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
+
+
+<script src="./address.js"></script>
+
+<script>
+
+    let formm = document.getElementById('second')
+    formm.addEventListener('submit', function(){
+        event.preventDefault(); 
+    })
+
+
+</script>

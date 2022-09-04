@@ -1,0 +1,54 @@
+#inputdiv{
+    
+    position: relative;
+    bottom: 16px;
+    right: 20px;
+    display: none;
+    z-index: 9;
+   background-color: transparent;
+   
+   
+}
+
+
+#appendsearch{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap ;
+    width: 150px;
+    font-size: 15px;
+    height: 100%;
+   background-color: rgb(255, 255, 255);
+   padding: 10px;
+   
+   margin: 5px;
+}
+
+#appendsearch>div{
+    cursor: pointer;
+}
+
+#appendsearch>div:hover{
+    text-decoration: underline;
+}
+
+#searchgrid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+    background: white;
+    width: 342px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    position: relative;
+    bottom: 275px;
+    height: 100%;
+    left: 160px;
+    
+}
+
+#searchgrid > img{
+    height: 100px;
+    border:1px solid rgba(0, 0, 0, 0.096);
+    z-index: 9;
+}
